@@ -10,7 +10,7 @@ def main():
     print('The length of your name is:') # 名前の長さを表示
     print(len(my_name))
     print('Wthat is your age?') # 年齢を尋ねる
-    my_age = input()
+    my_age = input() # 年齢を文字列で受け取る
     print('You will be ' + str(int(my_age) + 1) + ' in a year.') # 来年の年齢を表示
 
 if __name__ == '__main__':
