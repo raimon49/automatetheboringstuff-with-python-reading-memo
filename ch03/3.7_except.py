@@ -9,6 +9,8 @@ def main():
             return 42 / divide_by
         except ZeroDivisionError:
             print('エラー: 不正な引数です', end='')
+
+    # 以下のprint(spam(xx))をtry節で囲むとエラー発生個所でexcept節に移り、最後まで実行されない
     print(spam(2))
     print(spam(12))
     print(spam(0))
