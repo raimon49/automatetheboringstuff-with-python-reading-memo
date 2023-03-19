@@ -7,6 +7,7 @@ def main():
     secret_number = random.randint(1, 20)
     print('1から20までの数を当ててください。')
 
+    # 最大6回聞く
     for guessess_taken in range(1, 7):
         print('数を入力してください。')
         guess = int(input())
@@ -16,6 +17,7 @@ def main():
         elif guess > secret_number:
             print('大きいです。')
         else:
+            # 当たったらforループを抜ける
             break
 
     if guess == secret_number:
