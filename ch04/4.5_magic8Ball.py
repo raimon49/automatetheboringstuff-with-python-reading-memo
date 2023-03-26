@@ -15,6 +15,7 @@ def main():
         '見通しはそれほどよくない',
         'とても疑わしい',
     ]
+    # 3.2のmagic8Ball.pyと同じ動作をする
     print(messages[random.randint(0, len(messages) - 1)])
 
 if __name__ == '__main__':
