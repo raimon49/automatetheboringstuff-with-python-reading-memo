@@ -4,7 +4,7 @@
 import random
 
 def main():
-    messages = [
+    messages = (
         '確かにそうだ',
         '間違いなくそうだ',
         'はい',
@@ -14,7 +14,7 @@ def main():
         '私の答えはノーです',
         '見通しはそれほどよくない',
         'とても疑わしい',
-    ]
+    )
     # 3.2のmagic8Ball.pyと同じ動作をする
     print(messages[random.randint(0, len(messages) - 1)])
 
