@@ -8,8 +8,8 @@ def main():
         some_parameter.append('Hello')
 
     spam = [1, 2, 3]
-    eggs(spam)
-    print(spam)
+    eggs(spam)  # リスト型は引数で参照が渡される
+    print(spam) # [1, 2, 3, 'Hello']
 
 if __name__ == '__main__':
     main()
