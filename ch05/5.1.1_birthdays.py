@@ -16,13 +16,13 @@ def main():
         if name == '':
             break
 
-        if name in birthdays:
+        if name in birthdays: # 変数birthdaysにnameが辞書キーとして登録されているか
             print(name + 'の誕生日は' + birthdays[name])
         else:
             print(name + 'の誕生日は未登録です。')
             print('誕生日を入力してください')
             bday = input()
-            birthdays[name] = bday
+            birthdays[name] = bday # キー・バリュー・ペアとして追加登録
             print('誕生日データベースを更新しました。')
 
 if __name__ == '__main__':
