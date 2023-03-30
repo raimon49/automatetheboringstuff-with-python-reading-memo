@@ -8,6 +8,9 @@ def main():
     count = {}
 
     for character in message:
+        # if character in count:
+        #     count[character] = 0
+        # 上記のコードと同義
         count.setdefault(character, 0)
         count[character] = count[character] + 1
 
