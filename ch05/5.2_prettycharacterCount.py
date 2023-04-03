@@ -16,6 +16,9 @@ def main():
 
     pprint.pprint(count)
 
+    # 以下と同等
+    print(pprint.pformat(count))
+
 if __name__ == '__main__':
     main()
 
