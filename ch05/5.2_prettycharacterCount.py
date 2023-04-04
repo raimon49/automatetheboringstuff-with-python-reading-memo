@@ -19,6 +19,9 @@ def main():
     # 以下と同等
     print(pprint.pformat(count))
 
+    # 登場回数順でソート
+    pprint.pprint(sorted(count.items(), key=lambda x: x[1], reverse=True))
+
 if __name__ == '__main__':
     main()
 
