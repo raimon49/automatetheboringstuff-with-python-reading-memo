@@ -18,6 +18,7 @@ def main():
 
     print('持ち物の数')
     print('  -  リンゴ ' + str(total_brought(all_guests, 'リンゴ')))
+    print('  -  コップ ' + str(total_brought(all_guests, 'コップ')))
 
 
 if __name__ == '__main__':
