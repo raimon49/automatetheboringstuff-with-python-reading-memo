@@ -3,6 +3,16 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 
 def main():
+    """ピクニックの持ち物を出力する
+
+    Args:
+        items_dict: 道具の辞書データ
+        left_width: 左余白の長さ
+        right_width: 右余白の長さ
+
+    Returns:
+        None
+    """
     def print_picnic(items_dict, left_width, right_width):
         print('PICNIC ITEMS'.center(left_width + right_width, '-'))
         for k, v in items_dict.items():
