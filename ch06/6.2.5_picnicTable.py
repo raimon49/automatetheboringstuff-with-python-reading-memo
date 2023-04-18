@@ -14,6 +14,7 @@ def main():
         None
     """
     def print_picnic(items_dict, left_width, right_width):
+        # タイトル'PICNIC ITEMS'を中央揃えで出力
         print('PICNIC ITEMS'.center(left_width + right_width, '-'))
         for k, v in items_dict.items():
             print(k.ljust(left_width, '.') + str(v).rjust(right_width))
