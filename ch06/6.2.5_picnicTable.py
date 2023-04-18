@@ -17,6 +17,7 @@ def main():
         # タイトル'PICNIC ITEMS'を中央揃えで出力
         print('PICNIC ITEMS'.center(left_width + right_width, '-'))
         for k, v in items_dict.items():
+            # キーを左寄せピリオド埋め、値を右寄せスペース埋めで出力
             print(k.ljust(left_width, '.') + str(v).rjust(right_width))
 
     picnic_items = {'sandwiches': 4,
