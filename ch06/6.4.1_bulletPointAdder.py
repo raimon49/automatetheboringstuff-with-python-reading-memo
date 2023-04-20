@@ -10,8 +10,10 @@ def main():
 
     lines = text.split('\n')
     for i in range(len(lines)):
-        # 各行の先頭に'* 'を付与して出力
-        print('* ' + lines[i])
+        # 各行の先頭に'* 'を付与
+        lines[i] = '* ' + lines[i]
+
+    print(('\n').join(lines))
 
 if __name__ == '__main__':
     main()
