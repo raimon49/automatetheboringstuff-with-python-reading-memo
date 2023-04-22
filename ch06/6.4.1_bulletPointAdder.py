@@ -13,6 +13,7 @@ def main():
         # 各行の先頭に'* 'を付与
         lines[i] = '* ' + lines[i]
 
+    # リストを1つの文字列に結合
     print(('\n').join(lines))
 
 if __name__ == '__main__':
