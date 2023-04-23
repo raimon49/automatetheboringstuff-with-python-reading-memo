@@ -14,7 +14,7 @@ def main():
         for i in range(4, 7):
             if not text[i].isdecimal():
                 return False
-        if text[i] != '-':
+        if text[7] != '-':
             return False
         for i in range(8, 12):
             if not text[i].isdecimal():
