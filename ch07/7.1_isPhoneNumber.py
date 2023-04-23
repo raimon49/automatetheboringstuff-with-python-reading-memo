@@ -26,6 +26,13 @@ def main():
     print('Moshi Moshi は電話番号:')
     print(is_phone_number('Moshi Moshi'))
 
+    message = '明日415-555-1011に電話してください。オフィスは415-555-9999です。'
+    for i in range(len(message)):
+        chunk = message[i:i+12]
+        if is_phone_number(chunk):
+            print('電話番号が見つかりました: ' + chunk)
+    print('完了')
+
 if __name__ == '__main__':
     main()
 
