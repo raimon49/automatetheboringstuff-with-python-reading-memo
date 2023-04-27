@@ -23,7 +23,7 @@ def main():
 
     def is_phone_number_with_regex(text):
         import re
-        phone_num_regex = re.compile(r'\d\d\d-\d\d\d\d-\d\d\d\d')
+        phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
         mo = phone_num_regex.search(text)
 
         return mo != None
