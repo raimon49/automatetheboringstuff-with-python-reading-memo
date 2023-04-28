@@ -3,6 +3,9 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 
 def main():
+    import re
+    phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+
     def is_phone_number(text):
         if len(text) != 12:
             return False
@@ -22,8 +25,6 @@ def main():
         return True
 
     def is_phone_number_with_regex(text):
-        import re
-        phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
         mo = phone_num_regex.search(text)
 
         return mo != None
