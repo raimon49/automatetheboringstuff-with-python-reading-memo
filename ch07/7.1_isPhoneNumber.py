@@ -41,6 +41,9 @@ def main():
             print('電話番号が見つかりました: ' + chunk)
     print('完了')
 
+    number = '123-456-789'
+    assert is_phone_number(number) == is_phone_number_with_regex(number)
+
 if __name__ == '__main__':
     main()
 
