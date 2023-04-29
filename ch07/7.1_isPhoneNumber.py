@@ -44,6 +44,9 @@ def main():
     number = '123-456-789'
     assert is_phone_number(number) == is_phone_number_with_regex(number)
 
+    falsy_number = '12-3456-789'
+    assert is_phone_number(falsy_number) == is_phone_number_with_regex(falsy_number)
+
 if __name__ == '__main__':
     main()
 
