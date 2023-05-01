@@ -5,6 +5,8 @@
 def main():
     import re
     phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+
+    # 複雑な正規表現を三重引用符テキストでコメント付きで管理する
     phone_num_complex_regex = re.compile(r'''(
         (\d{3}|\(\d{3}\))?           # 3桁の市外局番で()が付いてもよい
         (\s|-|\.)?                   # 区切り（スペース or ハイフン or ドット）
