@@ -5,6 +5,14 @@
 def main():
     import re
     phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+    phone_num_complex_regex = re.compile(r'''(
+        (\d{3}|\(\d{3}\))?           # 3桁の市外局番で()が付いてもよい
+        (\s|-|\.)?                   # 区切り（スペース or ハイフン or ドット）
+        \d{3}                        # 3桁の市内局番
+        (\s|-|\.)                    # 区切り（スペース or ハイフン or ドット）
+        \d{4}                        # 4桁の番号
+        (\s*(ext|x|ext.)\s*\d{2,5})? # 2～5桁の内線番号
+    )''', re.VERBOSE)
 
     def is_phone_number(text):
         if len(text) != 12:
@@ -28,6 +36,12 @@ def main():
         mo = phone_num_regex.search(text)
 
         return mo != None
+
+    def is_phone_number_with_complex_regex(text):
+        mo = phone_num_complex_regex.search(text)
+
+        return mo != None
+
 
     print('415-555-4141 は電話番号:')
     print(is_phone_number('415-555-4141'))
