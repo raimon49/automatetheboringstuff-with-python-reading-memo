@@ -61,6 +61,11 @@ def main():
     falsy_number = '12-3456-789'
     assert is_phone_number(falsy_number) == is_phone_number_with_regex(falsy_number)
 
+    assert is_phone_number_with_complex_regex('(012)-333-4444')
+    assert is_phone_number_with_complex_regex('012.333.4444')
+    assert is_phone_number_with_complex_regex('012 333 4444')
+    assert is_phone_number_with_complex_regex('0123334444') == False
+
 if __name__ == '__main__':
     main()
 
