@@ -16,6 +16,13 @@ def main():
         (\s*(ext|x|ext.)\s*\d{2,5})? # 2～5桁の内線番号
     )''', re.VERBOSE | re.IGNORECASE | re.DOTALL)
 
+    email_regex = re.compile(r'''(
+        [a-zA-Z0-9._%+-]+  # ユーザー名
+        @                  # @ 記号
+        [a-zA-Z0-9.-] +    # ドメイン名
+        (\.[a-zA-Z]{2,4})  # ドットなんとか
+    )''', re.VERBOSE)
+
     def is_phone_number(text):
         if len(text) != 12:
             return False
