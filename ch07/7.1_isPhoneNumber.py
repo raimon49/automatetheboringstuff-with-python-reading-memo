@@ -14,7 +14,7 @@ def main():
         (\s|-|\.)                    # 区切り（スペース or ハイフン or ドット）
         \d{4}                        # 4桁の番号
         (\s*(ext|x|ext.)\s*\d{2,5})? # 2～5桁の内線番号
-    )''', re.VERBOSE | re.IGNORECASE)
+    )''', re.VERBOSE | re.IGNORECASE | re.DOTALL)
 
     def is_phone_number(text):
         if len(text) != 12:
