@@ -54,7 +54,7 @@ def main():
     def is_email_with_regex(text):
         mo = email_regex.search(text)
 
-        return mo != False
+        return mo != None
 
 
     print('415-555-4141 は電話番号:')
