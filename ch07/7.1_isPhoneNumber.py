@@ -78,10 +78,10 @@ def main():
     assert is_phone_number_with_complex_regex('(012)-333-4444')
     assert is_phone_number_with_complex_regex('012.333.4444')
     assert is_phone_number_with_complex_regex('012 333 4444')
-    assert is_phone_number_with_complex_regex('0123334444') == False
+    assert not is_phone_number_with_complex_regex('0123334444')
 
     assert is_email_with_regex('taro-hanako1234@example.com')
-    assert is_email_with_regex('$@example.com') == False
+    assert not is_email_with_regex('$@example.com')
 
 if __name__ == '__main__':
     main()
