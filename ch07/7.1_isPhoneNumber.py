@@ -81,6 +81,7 @@ def main():
     assert is_phone_number_with_complex_regex('0123334444') == False
 
     assert is_email_with_regex('taro-hanako1234@example.com')
+    assert is_email_with_regex('$@example.com') == False
 
 if __name__ == '__main__':
     main()
