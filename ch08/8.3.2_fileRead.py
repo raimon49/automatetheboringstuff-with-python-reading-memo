@@ -10,6 +10,13 @@ def main():
     print()
     print('\n'.join(lines))
 
+    # path/fileの確認
+    import os
+
+    abspath = os.path.abspath('.')
+    assert not os.path.isabs('.')
+    assert os.path.isabs(abspath)
+
 if __name__ == '__main__':
     main()
 
