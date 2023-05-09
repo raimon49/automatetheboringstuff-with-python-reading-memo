@@ -13,9 +13,8 @@ def main():
     # path/fileの確認
     import os
 
-    abspath = os.path.abspath('.')
     assert not os.path.isabs('.')
-    assert os.path.isabs(abspath)
+    assert os.path.isabs(os.path.abspath('.'))
 
 if __name__ == '__main__':
     main()
