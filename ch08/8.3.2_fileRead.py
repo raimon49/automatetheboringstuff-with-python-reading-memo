@@ -6,7 +6,7 @@ def main():
     sonnet_file = open('sonnet29.txt')
     lines = sonnet_file.readlines()
 
-    print(lines)
+    print(lines) # 各行の末尾には改行文字\nが付いている
     print()
     print('\n'.join(lines))
 
