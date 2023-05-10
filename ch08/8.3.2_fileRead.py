@@ -16,6 +16,7 @@ def main():
     assert not os.path.isabs('.')
     assert os.path.isabs(os.path.abspath('.'))
     assert os.path.exists('.')
+    assert os.path.isdir('.')
 
 if __name__ == '__main__':
     main()
