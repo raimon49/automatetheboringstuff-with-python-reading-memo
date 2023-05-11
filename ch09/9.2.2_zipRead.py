@@ -7,6 +7,10 @@ def main():
     example_zip = zipfile.ZipFile('example.zip')
     print(example_zip.namelist())
 
+    spam_info = example_zip.getinfo('spam.txt')
+    print('spam.txt: filesize: ' + str(spam_info.file_size))
+    print('spam.txt: compress_size: ' + str(spam_info.compress_size))
+
 if __name__ == '__main__':
     main()
 
