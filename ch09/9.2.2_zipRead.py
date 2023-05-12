@@ -10,6 +10,9 @@ def main():
     spam_info = example_zip.getinfo('spam.txt')
     print('spam.txt: filesize: ' + str(spam_info.file_size))
     print('spam.txt: compress_size: ' + str(spam_info.compress_size))
+    print('圧縮入るは{}倍小さい!'.format(
+        round(spam_info.file_size / spam_info.compress_size, 2)
+    ))
 
 if __name__ == '__main__':
     main()
