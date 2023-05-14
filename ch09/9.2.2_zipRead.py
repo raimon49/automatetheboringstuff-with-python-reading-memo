@@ -13,6 +13,9 @@ def main():
     size_raito = round(spam_info.file_size / spam_info.compress_size, 2)
     print('圧縮ファイルは{}倍小さい!'.format(size_raito))
 
+    # zipファイルを指定したフォルダに展開
+    # example_zip.extractall('/tmp/example_zip')
+
 if __name__ == '__main__':
     main()
 
