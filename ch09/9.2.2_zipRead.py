@@ -18,6 +18,7 @@ def main():
     # 中のファイル名を指定して展開
     # example_zip.extract('spam.txt', '/tmp/example_zip')
 
+    example_zip.close()
 
 if __name__ == '__main__':
     main()
