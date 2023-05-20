@@ -26,7 +26,9 @@ def main():
         day_part = mo.group(4)
         year_part = mo.group(6)
         after_part = mo.group(8)
-    # TODO: 欧州式の日付ファイルを作る
+        # TODO: 欧州式の日付ファイルを作る
+        euro_filename = before_part + day_part + '-' + month_part + '-' + \
+                        year_part + after_part
     # TODO: ファイル名を変更する
 
 
