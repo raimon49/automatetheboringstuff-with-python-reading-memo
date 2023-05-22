@@ -29,6 +29,10 @@ def main():
         # TODO: 欧州式の日付ファイルを作る
         euro_filename = before_part + day_part + '-' + month_part + '-' + \
                         year_part + after_part
+        print('Renaming "{}" to "{}"...'.format(
+            amer_filename,
+            euro_filename
+        ))
     # TODO: ファイル名を変更する
 
 
