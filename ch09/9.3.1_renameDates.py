@@ -34,6 +34,7 @@ def main():
             euro_filename
         ))
         # ファイル名を変更する
+        # (git reset --hard HEADで戻す)
         shutil.move(amer_filename, euro_filename)
 
 
