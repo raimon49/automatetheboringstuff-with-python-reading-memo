@@ -33,7 +33,8 @@ def main():
             amer_filename,
             euro_filename
         ))
-    # TODO: ファイル名を変更する
+        # ファイル名を変更する
+        # shutil.move(amer_filename, euro_filename)
 
 
 if __name__ == '__main__':
