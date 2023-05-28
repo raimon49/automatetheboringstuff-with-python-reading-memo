@@ -12,8 +12,10 @@ def main():
         number = 1
         while True:
             zip_filename = os.path.basename(folder) + '_' + str(number) + '.zip'
+            # 「対象フォルダ名_連番」の圧縮ファイル名を決める
             if not os.path.exists(zip_filename):
                 break
+
             number = number + 1
 
         # TODO:  ZIPファイルを作成する
