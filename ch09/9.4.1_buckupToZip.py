@@ -18,7 +18,7 @@ def main():
 
             number = number + 1
 
-        # TODO:  ZIPファイルを作成する
+        # ZIPファイルを作成する
         print('Creating {}...'.format(zip_filename))
         backup_zip = zipfile.ZipFile(zip_filename, 'w')
 
