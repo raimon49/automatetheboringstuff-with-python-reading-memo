@@ -26,6 +26,21 @@ def main():
         for foldername, sobfolders, filenames in os.walk(folder):
             print('Adding files in {}...'.format(foldername))
 
+            # 現在のフォルダをZIPファイルに追加する
+            backup_zip.write(foldername)
+
+            # 現在のフォルダの中の全ファイルをZIPファイルに追加する
+            for filename in filenames:
+                new_base = os.path.basename(folder) + '_'
+                if filename.startswith(new_base) and filename.endwith('.zip'):
+                    # バックアップ用ZIPファイルはバックアップ対象外
+                    continue
+
+                backup_zip.write(os.path.join(foldername, filename))
+
+        backup_zip.close()
+        print('Done.')
+
     backup_to_zip("./target_folder")
 
 if __name__ == '__main__':
