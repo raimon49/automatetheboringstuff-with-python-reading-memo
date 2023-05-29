@@ -22,7 +22,7 @@ def main():
         print('Creating {}...'.format(zip_filename))
         backup_zip = zipfile.ZipFile(zip_filename, 'w')
 
-        # TODO: フォルダのツリーを渡り歩いてその中のファイルを圧縮する
+        # フォルダのツリーを渡り歩いてその中のファイルを圧縮する
         for foldername, sobfolders, filenames in os.walk(folder):
             print('Adding files in {}...'.format(foldername))
 
