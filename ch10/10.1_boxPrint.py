@@ -18,6 +18,12 @@ def main():
 
         print(symbol * width)
 
+    for sym, w, h in (('*', 4, 4), ('0', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
+        try:
+            box_print(sym, w, h)
+        except Exception as err:
+            print('例外が起こりました: ' + str(err))
+
 if __name__ == '__main__':
     main()
 
