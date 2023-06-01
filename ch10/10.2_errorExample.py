@@ -9,7 +9,14 @@ def main():
     def bacon():
         raise Exception('これはエラーメッセージです。')
 
-    spam()
+    import traceback
+    try:
+        spam()
+    except:
+        error_file = open('errorInfo.txt', 'w')
+        error_file.write(traceback.format_exc())
+        error_file.close()
+        print('トレースバック情報をerrorInfo.txtに書き出しました')
 
 if __name__ == '__main__':
     main()
