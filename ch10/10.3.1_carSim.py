@@ -15,6 +15,8 @@ def main():
             elif stoplight[key] == 'red':
                 stoplight[key] = 'green'
 
+        assert 'red' in stoplight.values(), '赤信号がない! ' + str(stoplight)
+
     switch_lights(market_2nd)
 
 if __name__ == '__main__':
