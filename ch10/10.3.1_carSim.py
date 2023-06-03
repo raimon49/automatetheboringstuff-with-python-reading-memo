@@ -17,6 +17,7 @@ def main():
 
         assert 'red' in stoplight.values(), '赤信号がない! ' + str(stoplight)
 
+    # python -O オプションを付けて実行するとassertは無効化される
     switch_lights(mission_16th)
     switch_lights(market_2nd)
 
