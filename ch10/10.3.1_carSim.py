@@ -17,6 +17,7 @@ def main():
 
         assert 'red' in stoplight.values(), '赤信号がない! ' + str(stoplight)
 
+    switch_lights(mission_16th)
     switch_lights(market_2nd)
 
 if __name__ == '__main__':
