@@ -4,6 +4,7 @@
 
 def main():
     import logging
+    # 出力するログレベルとLogRecordオブジェクトから出力する情報のフォーマットを指定
     logging.basicConfig(level=logging.DEBUG,
                         format=' %(asctime)s - %(levelname)s - %(message)s')
     logging.debug('プログラム開始')
