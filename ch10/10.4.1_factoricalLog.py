@@ -7,6 +7,9 @@ def main():
     # 出力するログレベルとLogRecordオブジェクトから出力する情報のフォーマットを指定
     logging.basicConfig(level=logging.DEBUG,
                         format=' %(asctime)s - %(levelname)s - %(message)s')
+    # 以下の行を有効にするとログ出力を無効化
+    # logging.disable(logging.CRITICAL)
+
     logging.debug('プログラム開始')
 
     def factorial(n):
