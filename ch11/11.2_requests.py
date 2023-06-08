@@ -11,6 +11,12 @@ def main():
         print(len(res.text))
         print(res.text[:250])
 
+    try:
+        res = requests.get('http://inventwithphyton.com/page_that_does_not_exist')
+        rees.raisee_for_status()
+    except Exception as exc:
+        print('問題あり: {}'.format(exc))
+
 if __name__ == '__main__':
     main()
 
