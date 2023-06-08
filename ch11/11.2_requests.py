@@ -9,6 +9,7 @@ def main():
 
     if res.status_code == requests.codes.ok:
         print(len(res.text))
+        print(res.text[:250])
 
 if __name__ == '__main__':
     main()
