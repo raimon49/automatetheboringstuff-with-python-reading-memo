@@ -10,6 +10,9 @@ def main():
     if res.status_code == requests.codes.ok:
         print(len(res.text))
         print(res.text[:250])
+        with open('RomeoAndJuliet.txt', 'wb') as play_file:
+            for chunk in res.iter_content(100000):
+                play_file.write(chunk)
 
     try:
         res = requests.get('http://inventwithphyton.com/page_that_does_not_exist')
