@@ -11,6 +11,7 @@ def main():
         print(len(res.text))
         print(res.text[:250])
         with open('RomeoAndJuliet.txt', 'wb') as play_file:
+            # 100,000バイトずつ書き出す
             for chunk in res.iter_content(100000):
                 play_file.write(chunk)
 
