@@ -10,6 +10,7 @@ def main():
     if res.status_code == requests.codes.ok:
         print(len(res.text))
         print(res.text[:250])
+        # UNICODEを維持するためバイナリモード'b'を指定して開く
         with open('RomeoAndJuliet.txt', 'wb') as play_file:
             # 100,000バイトずつ書き出す
             for chunk in res.iter_content(100000):
