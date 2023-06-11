@@ -12,6 +12,8 @@ def main():
     print(len(elems))
     print(type(elems[0]))
     print(elems[0].getText())
+    print(str(elems[0]))
+    print(elems[0].attrs)
 
 if __name__ == '__main__':
     main()
