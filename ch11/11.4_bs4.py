@@ -10,6 +10,8 @@ def main():
     elems = exemple_soup.select('#author')
     print(type(elems))
     print(len(elems))
+    print(type(elems[0]))
+    print(elems[0].getText())
 
 if __name__ == '__main__':
     main()
