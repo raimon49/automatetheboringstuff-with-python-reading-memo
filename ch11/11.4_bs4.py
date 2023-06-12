@@ -6,8 +6,10 @@ def main():
     import  bs4
 
     example_file = open('example.html')
-    exemple_soup = bs4.BeautifulSoup(example_file)
-    elems = exemple_soup.select('#author')
+    example_soup = bs4.BeautifulSoup(example_file)
+
+    # 属性の探索
+    elems = example_soup.select('#author')
     print(type(elems))
     print(len(elems))
     print(type(elems[0]))
