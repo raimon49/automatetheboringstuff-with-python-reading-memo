@@ -17,6 +17,10 @@ def main():
     print(str(elems[0]))
     print(elems[0].attrs)
 
+    # タグの探索
+    p_elems = example_soup.select('p')
+    print(len(p_elems))
+
 if __name__ == '__main__':
     main()
 
