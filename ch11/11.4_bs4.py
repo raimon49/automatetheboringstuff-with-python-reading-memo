@@ -22,6 +22,10 @@ def main():
     print(len(p_elems))
     print(str(p_elems[0]))
     print(p_elems[0].getText())
+    print(str(p_elems[1]))
+    print(p_elems[1].getText())
+    print(str(p_elems[2]))
+    print(p_elems[2].getText())
 
 if __name__ == '__main__':
     main()
