@@ -20,6 +20,8 @@ def main():
     # タグの探索
     p_elems = example_soup.select('p')
     print(len(p_elems))
+    print(str(p_elems[0]))
+    print(p_elems[0].getText())
 
 if __name__ == '__main__':
     main()
