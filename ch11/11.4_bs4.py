@@ -27,6 +27,10 @@ def main():
     print(str(p_elems[2]))
     print(p_elems[2].getText())
 
+    # Tagオブジェクトのget()メソッドを用いた探索
+    span_elem = example_soup.select('span')[0]
+    print(str(span_elem))
+
 if __name__ == '__main__':
     main()
 
