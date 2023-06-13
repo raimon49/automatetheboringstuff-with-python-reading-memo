@@ -32,6 +32,7 @@ def main():
     print(str(span_elem))
     print(span_elem.get('id'))
     print(span_elem.get('some_nonexistent_addr') == None)
+    print(span_elem.attrs)
 
 if __name__ == '__main__':
     main()
