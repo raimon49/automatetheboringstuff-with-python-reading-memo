@@ -31,6 +31,7 @@ def main():
     span_elem = example_soup.select('span')[0]
     print(str(span_elem))
     print(span_elem.get('id'))
+    print(span_elem.get('some_nonexistent_addr') == None)
 
 if __name__ == '__main__':
     main()
