@@ -3,7 +3,7 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 
 def main():
-    import bs4
+    import  bs4
 
     example_file = open('example.html')
     example_soup = bs4.BeautifulSoup(example_file)
