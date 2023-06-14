@@ -6,7 +6,7 @@ def main():
     import bs4
 
     example_file = open('example.html')
-    example_soup = bs4.BeautifulSoup(example_file)
+    example_soup = bs4.BeautifulSoup(example_file, 'html.parser')
 
     # 属性の探索
     elems = example_soup.select('#author')
