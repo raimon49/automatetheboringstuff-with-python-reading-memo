@@ -10,6 +10,9 @@ def main():
     res = requests.get('https://google.com/search?q=toyota')
     res.raise_for_status()
 
+    soup = bs4.BeautifulSoup(res.text, 'html.parser')
+    link_elems = soup.select('.r a')
+
 if __name__ == '__main__':
     main()
 
