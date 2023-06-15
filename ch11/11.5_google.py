@@ -11,7 +11,9 @@ def main():
     res.raise_for_status()
 
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
-    link_elems = soup.select('.r a')
+    meta_elems = soup.select('meta')
+
+    print(len(meta_elems))
 
 if __name__ == '__main__':
     main()
