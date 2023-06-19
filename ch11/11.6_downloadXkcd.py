@@ -5,7 +5,10 @@
 def main():
     import requests, os, bs4
 
-    res = requests.get('https://xkcd.com')
+    url = 'https://xkcd.com'
+    os.makedirs('xkcd', exist_ok=True)
+
+    res = requests.get(url)
     res.raise_for_status()
 
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
