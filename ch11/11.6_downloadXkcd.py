@@ -18,7 +18,7 @@ def main():
     else:
         print('コミック画像が見つかりました')
         comic_url = 'https:' + comic_elem[0].get('src')
-        print(comic_url)
+        print('画像をダウンロード中 {}...'.format(comic_url))
 
 
 if __name__ == '__main__':
