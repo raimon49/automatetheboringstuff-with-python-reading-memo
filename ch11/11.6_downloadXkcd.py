@@ -19,6 +19,8 @@ def main():
         print('コミック画像が見つかりました')
         comic_url = 'https:' + comic_elem[0].get('src')
         print('画像をダウンロード中 {}...'.format(comic_url))
+        img = requests.get(comic_url)
+        img.raise_for_status()
 
 
 if __name__ == '__main__':
