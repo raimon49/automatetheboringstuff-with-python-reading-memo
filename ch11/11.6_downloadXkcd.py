@@ -9,9 +9,12 @@ def main():
     os.makedirs('xkcd', exist_ok=True)
 
     while not url.endswith('#'):
+        # ページをダウンロードする
         res = requests.get(url)
         res.raise_for_status()
         soup = bs4.BeautifulSoup(res.text, 'html.parser')
+
+        # コミックの画像URLを見つける
         comic_elem = soup.select('#comic img')
         if comic_elem == []:
             print('コミック画像が見つかりませんでした')
