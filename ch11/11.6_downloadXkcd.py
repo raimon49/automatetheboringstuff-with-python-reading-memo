@@ -20,12 +20,14 @@ def main():
             print('コミック画像が見つかりませんでした')
         else:
             print('コミック画像が見つかりました')
-            url = 'https:' + comic_elem[0].get('src')
-            print('画像をダウンロード中 {}...'.format(url))
+            comic_url = 'https:' + comic_elem[0].get('src')
+
+            # 画像をダウンロードする
+            print('画像をダウンロード中 {}...'.format(comic_url))
             img = requests.get(url)
             img.raise_for_status()
 
-            with open(os.path.join('xkcd', os.path.basename(url)), 'wb') as img_file:
+            with open(os.path.join('xkcd', os.path.basename(comic_url)), 'wb') as img_file:
                 for chunk in img.iter_content(100000):
                     img_file.write(chunk)
 
