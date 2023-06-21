@@ -22,6 +22,10 @@ def main():
         img = requests.get(comic_url)
         img.raise_for_status()
 
+        with open(os.path.join('xkcd', os.path.basename(comic_url)), 'wb') as img_file:
+            for chunk in img.iter_content(100000):
+                img_file.write(chunk)
+
 
 if __name__ == '__main__':
     main()
