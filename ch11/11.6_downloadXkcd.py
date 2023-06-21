@@ -26,6 +26,10 @@ def main():
             for chunk in img.iter_content(100000):
                 img_file.write(chunk)
 
+        prev_link = soup.select('a[rel="prev"]')[0]
+        comic_url = 'https:' + prev_link.get('href')
+        print(prev_link)
+
 
 if __name__ == '__main__':
     main()
