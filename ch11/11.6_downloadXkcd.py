@@ -27,10 +27,12 @@ def main():
             img = requests.get(url)
             img.raise_for_status()
 
+            # 画像を./xkcd ディレクトリに保存する
             with open(os.path.join('xkcd', os.path.basename(comic_url)), 'wb') as img_file:
                 for chunk in img.iter_content(100000):
                     img_file.write(chunk)
 
+            # PrevボタンのURLを取得する
             prev_link = soup.select('a[rel="prev"]')[0]
             url = 'https://xkcd.com' + prev_link.get('href')
 
