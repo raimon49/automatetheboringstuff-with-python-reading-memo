@@ -4,4 +4,4 @@
 
 ## 実行環境
 
-* Python 3.x
+* Python 3.11
