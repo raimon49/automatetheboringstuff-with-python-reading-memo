@@ -5,3 +5,4 @@
 ## 実行環境
 
 * Python 3.11
+* Ubuntu 20.04.1 LTS
