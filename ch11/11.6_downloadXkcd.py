@@ -8,6 +8,7 @@ def main():
     url = 'https://xkcd.com'
     os.makedirs('xkcd', exist_ok=True)
 
+    # 全ての画像URLを見つけるまで繰り返す
     while not url.endswith('#'):
         # ページをダウンロードする
         res = requests.get(url)
