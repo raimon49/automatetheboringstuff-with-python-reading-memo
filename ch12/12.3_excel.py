@@ -12,6 +12,9 @@ def main():
     sheet = wb['Sheet']
     print(type(sheet))
 
+    a1 = sheet['A1']
+    print(a1.value)
+
 if __name__ == '__main__':
     main()
 
