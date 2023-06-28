@@ -7,6 +7,7 @@ def main():
 
     wb = openpyxl.load_workbook('produceSales.xlsx')
     print(type(wb))
+    print(wb.sheetnames)
 
 if __name__ == '__main__':
     main()
