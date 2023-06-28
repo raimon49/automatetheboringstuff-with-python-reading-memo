@@ -9,6 +9,9 @@ def main():
     print(type(wb))
     print(wb.sheetnames)
 
+    sheet = wb['Sheet']
+    print(type(sheet))
+
 if __name__ == '__main__':
     main()
 
