@@ -17,6 +17,9 @@ def main():
     b1 = sheet['B1']
     print(b1.value)
 
+    for i in range(1, 8, 2):
+        print(i, sheet.cell(row=i, column=2).value)
+
 if __name__ == '__main__':
     main()
 
