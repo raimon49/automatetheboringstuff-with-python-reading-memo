@@ -14,6 +14,8 @@ def main():
 
     a1 = sheet['A1']
     print(a1.value)
+    b1 = sheet['B1']
+    print(b1.value)
 
 if __name__ == '__main__':
     main()
