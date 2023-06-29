@@ -21,6 +21,7 @@ def main():
         print(i, sheet.cell(row=i, column=2).value)
 
     print(sheet.max_row)
+    print(sheet.max_column)
 
 if __name__ == '__main__':
     main()
