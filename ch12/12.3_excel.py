@@ -4,6 +4,7 @@
 
 def main():
     import openpyxl
+    from openpyxl.utils import get_column_letter, column_index_from_string
 
     wb = openpyxl.load_workbook('produceSales.xlsx')
     print(type(wb))
