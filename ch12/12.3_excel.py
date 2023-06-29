@@ -20,6 +20,8 @@ def main():
     for i in range(1, 8, 2):
         print(i, sheet.cell(row=i, column=2).value)
 
+    print(sheet.max_row)
+
 if __name__ == '__main__':
     main()
 
