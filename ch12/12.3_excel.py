@@ -25,6 +25,7 @@ def main():
     print(sheet.max_column)
 
     print(get_column_letter(1))
+    print(get_column_letter(2))
 
 if __name__ == '__main__':
     main()
