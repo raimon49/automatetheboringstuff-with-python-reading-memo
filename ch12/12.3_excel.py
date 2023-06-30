@@ -24,9 +24,9 @@ def main():
     print(sheet.max_row)
     print(sheet.max_column)
 
-    print(get_column_letter(1))
-    print(get_column_letter(2))
-    print(get_column_letter(27))
+    print(get_column_letter(1))  # A
+    print(get_column_letter(2))  # B
+    print(get_column_letter(27)) # AA
 
 if __name__ == '__main__':
     main()
