@@ -26,6 +26,7 @@ def main():
 
     print(get_column_letter(1))
     print(get_column_letter(2))
+    print(get_column_letter(27))
 
 if __name__ == '__main__':
     main()
