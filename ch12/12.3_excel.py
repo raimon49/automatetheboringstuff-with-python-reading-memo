@@ -32,6 +32,7 @@ def main():
     print(get_column_letter(sheet.max_column)) # D
 
     print(column_index_from_string('A')) # 1
+    print(column_index_from_string('AA')) # 27
 
 if __name__ == '__main__':
     main()
