@@ -27,7 +27,7 @@ def main():
     print(get_column_letter(1))  # A
     print(get_column_letter(2))  # B
     print(get_column_letter(27)) # AA
-    print(get_column_letter(900))
+    print(get_column_letter(900)) # AHP
 
 if __name__ == '__main__':
     main()
