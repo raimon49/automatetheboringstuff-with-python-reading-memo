@@ -29,6 +29,8 @@ def main():
     print(get_column_letter(27))  # AA
     print(get_column_letter(900)) # AHP
 
+    print(get_column_letter(sheet.max_column)) # D
+
 if __name__ == '__main__':
     main()
 
