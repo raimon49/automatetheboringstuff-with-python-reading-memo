@@ -33,6 +33,13 @@ def main():
 
     print(column_index_from_string('A'))  # 1
     print(column_index_from_string('AA')) # 27
+    print(column_index_from_string('AA')) # 27
+
+    for row_of_cell_objects in sheet['A1':'C3']:
+        for cell_obj in row_of_cell_objects:
+            print(cell_obj.coordinate, cell_obj.value)
+
+        print('--- END OF ROw ---')
 
 if __name__ == '__main__':
     main()
