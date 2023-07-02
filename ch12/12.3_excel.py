@@ -35,8 +35,8 @@ def main():
     print(column_index_from_string('AA')) # 27
     print(column_index_from_string('AA')) # 27
 
-    for row_of_cell_objects in sheet['A1':'C3']:
-        for cell_obj in row_of_cell_objects:
+    for row_of_cell_objects in sheet['A1':'C3']: # 矩形領域をスライスで取得
+        for cell_obj in row_of_cell_objects:     # 行に含まれるセルを取得
             print(cell_obj.coordinate, cell_obj.value)
 
         print('--- END OF ROw ---')
