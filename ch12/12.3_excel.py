@@ -41,6 +41,10 @@ def main():
 
         print('--- END OF ROw ---')
 
+    sheet = wb.active
+    for call_obj in tuple(sheet.columns)[1]:
+        print(cell_obj.value)
+
 if __name__ == '__main__':
     main()
 
