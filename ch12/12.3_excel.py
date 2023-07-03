@@ -42,7 +42,7 @@ def main():
         print('--- END OF ROw ---')
 
     sheet = wb.active
-    for call_obj in tuple(sheet.columns)[1]:
+    for call_obj in tuple(sheet.columns)[1]: # tuple()でGeneratorを反復可能に変換
         print(cell_obj.value)
 
 if __name__ == '__main__':
