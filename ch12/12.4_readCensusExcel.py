@@ -17,6 +17,9 @@ def main():
         country = sheet['C' + str(row)].value
         pop = sheet['D' + str(row)].value
 
+        country_data.setdefault(state, {})
+        country_data[state].setdefault(country, {'tracts': 0, 'pop': 0})
+
 if __name__ == '__main__':
     main()
 
