@@ -9,7 +9,7 @@ def main():
     wb = openpyxl.load_workbook('censuspopdata.xlsx')
     print(wb.sheetnames)
     sheet = wb['Population by Census Tract']
-    country_cata = {}
+    country_data = {}
 
     print('行を読み込んでいます...')
     for row in range(2, sheet.max_row + 1):
