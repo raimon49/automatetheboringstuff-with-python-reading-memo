@@ -24,6 +24,7 @@ def main():
         country_data[state].setdefault(country, {'tracts': 0, 'pop': 0})
         # 各行が人口調査標準地域を表すので、数を1つ増やす
         country_data[state][country]['tracts'] += 1
+        # この人口調査標準地域の人口だけ郡の人口を増やす
         country_data[state][country]['pop'] += int(pop)
 
     pprint.pprint(country_data)
