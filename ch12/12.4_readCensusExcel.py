@@ -13,6 +13,7 @@ def main():
 
     print('行を読み込んでいます...')
     for row in range(2, sheet.max_row + 1):
+        # スプレッドシートの1行に、ひとつの人口調査標準地域のデータがある
         state = sheet['B' + str(row)].value
         country = sheet['C' + str(row)].value
         pop = sheet['D' + str(row)].value
