@@ -19,6 +19,10 @@ def main():
 
         country_data.setdefault(state, {})
         country_data[state].setdefault(country, {'tracts': 0, 'pop': 0})
+        country_data[state][country]['tracts'] += 1
+        country_data[state][country]['pop'] += int(pop)
+
+    pprint.pprint(country_data)
 
 if __name__ == '__main__':
     main()
