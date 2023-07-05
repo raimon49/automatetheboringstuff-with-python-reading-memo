@@ -18,7 +18,9 @@ def main():
         country = sheet['C' + str(row)].value
         pop = sheet['D' + str(row)].value
 
+        # この州のキーが確実に存在するようにする
         country_data.setdefault(state, {})
+        # この州のこの郡のキーが確実に存在するようにする
         country_data[state].setdefault(country, {'tracts': 0, 'pop': 0})
         country_data[state][country]['tracts'] += 1
         country_data[state][country]['pop'] += int(pop)
