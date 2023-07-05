@@ -27,6 +27,7 @@ def main():
         # この人口調査標準地域の人口だけ郡の人口を増やす
         country_data[state][country]['pop'] += int(pop)
 
+    # XXX: 作成されたデータのプリントデバッグ
     pprint.pprint(country_data)
 
 if __name__ == '__main__':
