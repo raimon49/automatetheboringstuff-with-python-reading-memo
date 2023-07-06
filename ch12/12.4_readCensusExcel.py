@@ -31,6 +31,12 @@ def main():
     with open('census2010.py', 'w') as result_file:
         result_file.write('all_data = ' + pprint.pformat(country_data))
 
+    print('完了')
+    # Pythonインタラクティブシェルで
+    # >>> import census2010
+    # >>> census2010.all_data['AK']['Anchroge']
+    # >>> census2010.all_data['AK']['Aleutians West']
+    # でデータを確認可能
 
 if __name__ == '__main__':
     main()
