@@ -27,8 +27,10 @@ def main():
         # この人口調査標準地域の人口だけ郡の人口を増やす
         country_data[state][country]['pop'] += int(pop)
 
-    # XXX: 作成されたデータのプリントデバッグ
-    pprint.pprint(country_data)
+    print('結果を描き込み中...')
+    with open('census2010.py', 'w') as result_file:
+        result_file.write('all_data = ' + pprint.pformat(country_data))
+
 
 if __name__ == '__main__':
     main()
