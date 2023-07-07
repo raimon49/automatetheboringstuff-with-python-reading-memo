@@ -29,6 +29,7 @@ def main():
 
     print('結果を描き込み中...')
     with open('census2010.py', 'w') as result_file:
+        # pprint.pformat()でPythonコードとして書き出す
         result_file.write('all_data = ' + pprint.pformat(country_data))
 
     print('完了')
