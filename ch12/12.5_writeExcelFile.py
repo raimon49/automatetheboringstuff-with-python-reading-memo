@@ -13,6 +13,9 @@ def main():
     sheet.title = 'Spam Bacon Eggs Sheet'
     print(wb.sheetnames)
 
+    wb.create_sheet()
+    print(wb.sheetnames)
+
 if __name__ == '__main__':
     main()
 
