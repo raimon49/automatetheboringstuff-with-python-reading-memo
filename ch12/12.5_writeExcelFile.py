@@ -13,9 +13,11 @@ def main():
     sheet.title = 'Spam Bacon Eggs Sheet'
     print(wb.sheetnames)
 
+    # デフォルトの'Sheet'という名称で末尾にシート追加
     wb.create_sheet()
     print(wb.sheetnames)
 
+    # 追加する位置とシート名を指定してシート追加
     wb.create_sheet(index=0, title='First Sheet')
     print(wb.sheetnames)
 
