@@ -9,6 +9,7 @@ def main():
     print(wb.sheetnames)
 
     sheet = wb.active
+    # シートの名前を変更
     sheet.title = 'Spam Bacon Eggs Sheet'
     print(wb.sheetnames)
 
