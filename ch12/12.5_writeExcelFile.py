@@ -16,6 +16,9 @@ def main():
     wb.create_sheet()
     print(wb.sheetnames)
 
+    wb.create_sheet(index=0, title='First Sheet')
+    print(wb.sheetnames)
+
 if __name__ == '__main__':
     main()
 
