@@ -25,6 +25,9 @@ def main():
     wb.create_sheet(index=2, title='Middle Sheet')
     print(wb.sheetnames)
 
+    del wb['Middle Sheet']
+    print(wb.sheetnames)
+
 if __name__ == '__main__':
     main()
 
