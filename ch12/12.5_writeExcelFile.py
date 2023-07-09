@@ -26,6 +26,7 @@ def main():
     print(wb.sheetnames)
 
     del wb['Middle Sheet']
+    del wb['Spam Bacon Eggs Sheet']
     print(wb.sheetnames)
 
 if __name__ == '__main__':
