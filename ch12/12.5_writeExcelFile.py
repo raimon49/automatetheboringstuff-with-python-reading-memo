@@ -25,6 +25,7 @@ def main():
     wb.create_sheet(index=2, title='Middle Sheet')
     print(wb.sheetnames)
 
+    # シート名を指定してワークブックから削除
     del wb['Middle Sheet']
     del wb['Spam Bacon Eggs Sheet']
     print(wb.sheetnames)
