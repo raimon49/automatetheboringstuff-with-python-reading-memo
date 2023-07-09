@@ -17,10 +17,11 @@ def main():
     wb.create_sheet()
     print(wb.sheetnames)
 
-    # 追加する位置とシート名を指定してシート追加
+    # 追加する位置とシート名を指定してシート追加（先頭）
     wb.create_sheet(index=0, title='First Sheet')
     print(wb.sheetnames)
 
+    # 追加する位置とシート名を指定してシート追加（3番目）
     wb.create_sheet(index=2, title='Middle Sheet')
     print(wb.sheetnames)
 
