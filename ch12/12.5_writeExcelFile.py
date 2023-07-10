@@ -30,6 +30,7 @@ def main():
     del wb['Spam Bacon Eggs Sheet']
     print(wb.sheetnames)
 
+    # セルに値を書き込む
     wb['First Sheet']['A1'] = 'Hello, Workd!'
     print(wb['First Sheet']['A1'].value)
 
