@@ -30,6 +30,9 @@ def main():
     del wb['Spam Bacon Eggs Sheet']
     print(wb.sheetnames)
 
+    wb['First Sheet']['A1'] = 'Hello, Workd!'
+    print(wb['First Sheet']['A1'].value)
+
 if __name__ == '__main__':
     main()
 
