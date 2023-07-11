@@ -32,7 +32,7 @@ def main():
 
     # セルに値を書き込む
     wb['First Sheet']['A1'] = 'Hello, World!'
-    print(wb['First Sheet']['A1'].value)
+    print(wb['First Sheet']['A1'].value) # Hello, World!
 
 if __name__ == '__main__':
     main()
