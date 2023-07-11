@@ -31,7 +31,7 @@ def main():
     print(wb.sheetnames)
 
     # セルに値を書き込む
-    wb['First Sheet']['A1'] = 'Hello, Workd!'
+    wb['First Sheet']['A1'] = 'Hello, World!'
     print(wb['First Sheet']['A1'].value)
 
 if __name__ == '__main__':
