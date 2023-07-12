@@ -13,6 +13,8 @@ def main():
                      'Celery': 1.19,
                      'Lemon': 1.27}
 
+    # TODO: 行をループして価格を更新する
+
 if __name__ == '__main__':
     main()
 
