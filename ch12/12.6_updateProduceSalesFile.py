@@ -13,8 +13,8 @@ def main():
                      'Celery': 1.19,
                      'Lemon': 1.27}
 
-    # TODO: 行をループして価格を更新する
-    for row_num in range(2, sheet.max_row + 1): # 先頭行をスキップ
+    # 行をループして価格を更新する
+    for row_num in range(2, sheet.max_row + 1): # 先頭行は表見出しのためスキップ
         produce_name = sheet.cell(row = row_num, column=1).value
         if produce_name in PRICE_UPDATES:
             sheet.cell(row=row_num, column=2).value = PRICE_UPDATES[produce_name]
