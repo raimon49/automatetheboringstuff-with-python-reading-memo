@@ -16,7 +16,8 @@ def main():
     # TODO: 行をループして価格を更新する
     for row_num in range(2, sheet.max_row + 1): # 先頭行をスキップ
         produce_name = sheet.cell(row = row_num, column=1).value
-        print(produce_name)
+        if produce_name in PRICE_UPDATES:
+            sheet.cell(row=row_num, column=2).value = PRICE_UPDATES[produce_name]
 
 if __name__ == '__main__':
     main()
