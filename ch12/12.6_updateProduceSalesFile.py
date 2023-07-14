@@ -19,6 +19,8 @@ def main():
         if produce_name in PRICE_UPDATES:
             sheet.cell(row=row_num, column=2).value = PRICE_UPDATES[produce_name]
 
+    wb.save('updatedProduceSales.xlsx')
+
 if __name__ == '__main__':
     main()
 
