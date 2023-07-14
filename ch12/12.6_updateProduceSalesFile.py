@@ -19,6 +19,7 @@ def main():
         if produce_name in PRICE_UPDATES:
             sheet.cell(row=row_num, column=2).value = PRICE_UPDATES[produce_name]
 
+    # 間違った内容で更新されないよう、元のファイルを上書きせず別名で保存
     wb.save('updatedProduceSales.xlsx')
 
 if __name__ == '__main__':
