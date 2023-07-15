@@ -9,6 +9,7 @@ def main():
     wb = openpyxl.load_workbook('produceSales.xlsx')
     sheet = wb['Sheet']
 
+    # セルA1のフォントスタイルを変更する
     italic24_font = Font(size=24, italic=True)
     sheet['A1'].font = italic24_font
     sheet['A1'] = 'Hello, italic world!!'
