@@ -4,9 +4,14 @@
 
 def main():
     import openpyxl
+    from openpyxl.styles import Font
 
     wb = openpyxl.load_workbook('produceSales.xlsx')
     sheet = wb['Sheet']
+
+    italic24_font = Font(size=24, italic=True)
+    sheet['A1'].font = italic24_font
+    sheet['A1'] = 'Hello, italic world!!'
 
     # 農産物の種類と、更新する価格
     PRICE_UPDATES = {'Garlic': 3.07,
