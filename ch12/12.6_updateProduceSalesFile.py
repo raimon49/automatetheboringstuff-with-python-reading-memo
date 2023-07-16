@@ -14,6 +14,7 @@ def main():
     sheet['A1'].font = italic24_font
     sheet['A1'] = 'Hello, italic world!!'
 
+    # セルA2のフォントスタイルを変更する
     bold24_font = Font(name='Times New Roman', size=24, bold=True)
     sheet['A2'].font = bold24_font
     sheet['A2'] = 'Bold Times New Roman'
