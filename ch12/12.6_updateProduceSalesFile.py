@@ -14,6 +14,10 @@ def main():
     sheet['A1'].font = italic24_font
     sheet['A1'] = 'Hello, italic world!!'
 
+    bold24_font = Font(name='Times New Roman', size=24, bold=True)
+    sheet['A2'].font = bold24_font
+    sheet['A2'] = 'Bold Times New Roman'
+
     # 農産物の種類と、更新する価格
     PRICE_UPDATES = {'Garlic': 3.07,
                      'Celery': 1.19,
