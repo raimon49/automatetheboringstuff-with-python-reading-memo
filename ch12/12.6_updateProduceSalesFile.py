@@ -6,7 +6,7 @@ def main():
     import openpyxl
     from openpyxl.styles import Font
 
-    wb = openpyxl.load_workbook('produceSales.xlsx', data_only=False)
+    wb = openpyxl.load_workbook('produceSales.xlsx', data_only=False) # 数式を計算結果として開くときはdata_only=Trueを指定する
     sheet = wb['Sheet']
 
     # セルA1のフォントスタイルを変更する
