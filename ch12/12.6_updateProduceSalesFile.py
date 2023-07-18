@@ -20,6 +20,7 @@ def main():
     sheet['A2'] = 'Bold Times New Roman'
 
     sheet.row_dimensions[1].height = 70
+    sheet.column_dimensions['B'].width = 20
 
     # 数式の適用
     sheet['B9'] = '=SUM(B1:B8)'
