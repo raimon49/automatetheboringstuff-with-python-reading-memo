@@ -19,6 +19,7 @@ def main():
     sheet['A2'].font = bold24_font
     sheet['A2'] = 'Bold Times New Roman'
 
+    # 1行目の高さを設定
     sheet.row_dimensions[1].height = 70
     sheet.column_dimensions['B'].width = 20
 
