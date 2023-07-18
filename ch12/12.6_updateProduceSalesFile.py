@@ -19,6 +19,8 @@ def main():
     sheet['A2'].font = bold24_font
     sheet['A2'] = 'Bold Times New Roman'
 
+    sheet.row_dimensions[1].height = 70
+
     # 数式の適用
     sheet['B9'] = '=SUM(B1:B8)'
 
