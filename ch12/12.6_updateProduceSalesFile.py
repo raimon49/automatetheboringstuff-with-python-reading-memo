@@ -21,6 +21,7 @@ def main():
 
     # 1行目の高さを設定
     sheet.row_dimensions[1].height = 70
+    # 列Bの幅を設定
     sheet.column_dimensions['B'].width = 20
 
     # 数式の適用
