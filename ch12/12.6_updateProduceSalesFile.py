@@ -30,6 +30,8 @@ def main():
     # セルC10:D12の範囲を結合
     sheet.merge_cells('C10:D12')
 
+    sheet.unmerge_cells('C10:D12')
+
     # 農産物の種類と、更新する価格
     PRICE_UPDATES = {'Garlic': 3.07,
                      'Celery': 1.19,
