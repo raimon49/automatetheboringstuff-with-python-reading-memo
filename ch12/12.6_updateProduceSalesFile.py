@@ -27,6 +27,8 @@ def main():
     # 数式の適用
     sheet['B9'] = '=SUM(B1:B8)'
 
+    sheet.merge_cells('C10:D12')
+
     # 農産物の種類と、更新する価格
     PRICE_UPDATES = {'Garlic': 3.07,
                      'Celery': 1.19,
