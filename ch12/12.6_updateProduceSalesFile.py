@@ -30,6 +30,7 @@ def main():
     # セルC10:D12の範囲を結合
     sheet.merge_cells('C10:D12')
 
+    # セルの結合を解除
     sheet.unmerge_cells('C10:D12')
 
     # 農産物の種類と、更新する価格
