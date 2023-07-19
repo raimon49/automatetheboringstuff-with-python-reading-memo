@@ -27,6 +27,7 @@ def main():
     # 数式の適用
     sheet['B9'] = '=SUM(B1:B8)'
 
+    # セルC10:D12の範囲を結合
     sheet.merge_cells('C10:D12')
 
     # 農産物の種類と、更新する価格
