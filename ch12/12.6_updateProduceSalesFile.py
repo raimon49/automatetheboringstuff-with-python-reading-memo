@@ -33,6 +33,8 @@ def main():
     # セルの結合を解除
     sheet.unmerge_cells('C10:D12')
 
+    sheet.freeze_panes = 'A2'
+
     # 農産物の種類と、更新する価格
     PRICE_UPDATES = {'Garlic': 3.07,
                      'Celery': 1.19,
