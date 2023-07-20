@@ -33,6 +33,7 @@ def main():
     # セルの結合を解除
     sheet.unmerge_cells('C10:D12')
 
+    # ウィンドウ枠の固定（1行目を見出し化）
     sheet.freeze_panes = 'A2'
 
     # 農産物の種類と、更新する価格
