@@ -36,6 +36,7 @@ def main():
     # ウィンドウ枠の固定（1行目を見出し化）
     sheet.freeze_panes = 'A2'
 
+    # ウィンドウ枠の固定を解除
     sheet.freeze_panes = None
 
     # 農産物の種類と、更新する価格
