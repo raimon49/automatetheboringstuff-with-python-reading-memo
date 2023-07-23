@@ -52,6 +52,7 @@ def main():
 
     # セルの矩形領域からReferenceオブジェクトを作成
     ref_obj = openpyxl.chart.Reference(sheet, min_col=1, min_row=1, max_col=1, max_row=10)
+    series_obj = openpyxl.chart.Series(ref_obj, title='First series')
 
     # 間違った内容で更新されないよう、元のファイルを上書きせず別名で保存
     wb.save('updatedProduceSales.xlsx')
