@@ -63,6 +63,8 @@ def main():
     chart_obj.w = 300
     chart_obj.h = 200
 
+    sheet.add_chart(chart_obj)
+
     # 間違った内容で更新されないよう、元のファイルを上書きせず別名で保存
     wb.save('updatedProduceSales.xlsx')
 
