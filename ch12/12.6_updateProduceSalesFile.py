@@ -55,6 +55,13 @@ def main():
     # Referenceオブジェクトを渡してSeriesオブジェクトを作成
     series_obj = openpyxl.chart.Series(ref_obj, title='First series')
 
+    chart_obj = openpyxl.chart.BarChart()
+    chart_obj.append(series_obj)
+    chart_obj.y = 50
+    chart_obj.x = 100
+    chart_obj.w = 300
+    chart_obj.h = 200
+
     # 間違った内容で更新されないよう、元のファイルを上書きせず別名で保存
     wb.save('updatedProduceSales.xlsx')
 
