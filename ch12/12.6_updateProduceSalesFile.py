@@ -55,6 +55,7 @@ def main():
     # Referenceオブジェクトを渡してSeriesオブジェクトを作成
     series_obj = openpyxl.chart.Series(ref_obj, title='First series')
 
+    # 棒グラフの作成
     chart_obj = openpyxl.chart.BarChart()
     chart_obj.append(series_obj)
     chart_obj.y = 50
