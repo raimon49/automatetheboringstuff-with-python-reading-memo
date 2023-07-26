@@ -8,6 +8,8 @@ def main():
     pdf_file_obj = open('meetingminutes.pdf', 'rb')
     pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
 
+    print(len(pdf_reader.pages))
+
 if __name__ == '__main__':
     main()
 
