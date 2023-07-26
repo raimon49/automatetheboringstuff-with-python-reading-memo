@@ -5,6 +5,7 @@
 def main():
     import PyPDF2
 
+    # PdfReaderオブジェクトを生成
     pdf_file_obj = open('meetingminutes.pdf', 'rb')
     pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
 
