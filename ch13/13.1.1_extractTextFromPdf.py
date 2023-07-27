@@ -11,6 +11,7 @@ def main():
 
     print(len(pdf_reader.pages)) # 19
 
+    # 先頭ページを取得
     page_obj = pdf_reader.pages[0]
     print(page_obj.extract_text()) # OOFFFFIICCIIAALL  BBOOAARRDD  MMIINNUUTTEESS
 
