@@ -13,6 +13,7 @@ def main():
 
     pdf_reader.decrypt('rosebud')  # パスワード暗号化を解除
     page_obj = pdf_reader.pages[0] # ページにアクセスしても例外が起きなくなる
+    print(page_obj.extract_text()) # OOFFFFIICCIIAALL  BBOOAARRDD  MMIINNUUTTEESS
 
 if __name__ == '__main__':
     main()
