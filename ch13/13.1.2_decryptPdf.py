@@ -11,6 +11,9 @@ def main():
 
     print(pdf_reader.is_encrypted)
 
+    pdf_reader.decrypt('rosebud')
+    page_obj = pdf_reader.pages[0]
+
 if __name__ == '__main__':
     main()
 
