@@ -11,8 +11,8 @@ def main():
 
     print(pdf_reader.is_encrypted)
 
-    pdf_reader.decrypt('rosebud')
-    page_obj = pdf_reader.pages[0]
+    pdf_reader.decrypt('rosebud')  # パスワード暗号化を解除
+    page_obj = pdf_reader.pages[0] # ページにアクセスしても例外が起きなくなる
 
 if __name__ == '__main__':
     main()
