@@ -7,6 +7,8 @@ def main():
 
     pdf1_file = open('meetingminutes.pdf', 'rb')
     pdf2_file = open('meetingminutes2.pdf', 'rb')
+    pdf1_reader = PyPDF2.PdfReader(pdf1_file)
+    pdf2_reader = PyPDF2.PdfReader(pdf2_file)
 
 if __name__ == '__main__':
     main()
