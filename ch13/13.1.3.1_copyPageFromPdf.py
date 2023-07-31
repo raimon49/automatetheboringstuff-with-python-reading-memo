@@ -15,6 +15,10 @@ def main():
         page_obj = pdf1_reader.pages[page_num]
         pdf_writer.add_page(page_obj)
 
+    for page_num in range(len(pdf2_reader.pages)):
+        page_obj = pdf2_reader.pages[page_num]
+        pdf_writer.add_page(page_obj)
+
 if __name__ == '__main__':
     main()
 
