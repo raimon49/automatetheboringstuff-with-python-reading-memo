@@ -22,6 +22,7 @@ def main():
         pdf_writer.add_page(page_obj)
 
     with open('combinedminutes.pdf', 'wb') as pdf_output_file:
+        # 新規PDFファイルとして保存
         pdf_writer.write(pdf_output_file)
         pdf1_file.close()
         pdf2_file.close()
