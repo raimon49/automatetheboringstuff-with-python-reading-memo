@@ -13,10 +13,12 @@ def main():
     pdf_writer = PyPDF2.PdfWriter() # 白紙のPDF文書を作成
     for page_num in range(len(pdf1_reader.pages)):
         page_obj = pdf1_reader.pages[page_num]
+        # ページをコピー
         pdf_writer.add_page(page_obj)
 
     for page_num in range(len(pdf2_reader.pages)):
         page_obj = pdf2_reader.pages[page_num]
+        # ページをコピー
         pdf_writer.add_page(page_obj)
 
     with open('combinedminutes.pdf', 'wb') as pdf_output_file:
