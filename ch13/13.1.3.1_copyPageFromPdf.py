@@ -10,7 +10,7 @@ def main():
     pdf1_reader = PyPDF2.PdfReader(pdf1_file)
     pdf2_reader = PyPDF2.PdfReader(pdf2_file)
 
-    pdf_writer = PyPDF2.PdfWriter()
+    pdf_writer = PyPDF2.PdfWriter() # 白紙のPDF文書を作成
     for page_num in range(len(pdf1_reader.pages)):
         page_obj = pdf1_reader.pages[page_num]
         pdf_writer.add_page(page_obj)
