@@ -10,6 +10,14 @@ def main():
     page = pdf_reader.pages[0]
     page.rotate(90)
 
+    pdf_writer = PyPDF2.PdfWriter() # 白紙のPDF文書を作成
+    pdf_writer.add_page(page)
+
+    with open('rotatedPage.pdf', 'wb') as result_pdf_file:
+        # 新規PDFファイルとして保存
+        pdf_writer.write(result_pdf_file)
+        minutes_file.close()
+
 if __name__ == '__main__':
     main()
 
