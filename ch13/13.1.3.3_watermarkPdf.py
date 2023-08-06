@@ -9,6 +9,7 @@ def main():
     pdf_reader = PyPDF2.PdfReader(minutes_file)
     minutes_first_page = pdf_reader.pages[0]
     pdf_watermark_reader = PyPDF2.PdfReader(open('watermark.pdf', 'rb'))
+    # 別PDFのページを重ねて透かしを埋め込む
     minutes_first_page.merge_page(pdf_watermark_reader.pages[0])
 
 if __name__ == '__main__':
