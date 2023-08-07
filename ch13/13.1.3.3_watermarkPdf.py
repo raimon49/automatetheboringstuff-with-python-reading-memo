@@ -19,6 +19,10 @@ def main():
         page_obj = pdf_reader.pages[page_num]
         pdf_writer.add_page(page_obj)
 
+    with open('watermarkedCover.pdf', 'wb') as result_pdf_file:
+        pdf_writer.write(result_pdf_file)
+        minutes_file.close()
+
 if __name__ == '__main__':
     main()
 
