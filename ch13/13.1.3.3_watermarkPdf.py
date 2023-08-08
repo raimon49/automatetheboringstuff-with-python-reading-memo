@@ -20,6 +20,7 @@ def main():
         pdf_writer.add_page(page_obj)
 
     with open('watermarkedCover.pdf', 'wb') as result_pdf_file:
+        # 透かしを埋め込んだPDFをファイル書き出し
         pdf_writer.write(result_pdf_file)
         minutes_file.close()
 
