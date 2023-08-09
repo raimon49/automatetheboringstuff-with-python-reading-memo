@@ -11,9 +11,11 @@ def main():
     pdf_writer = PyPDF2.PdfWriter()
 
     for page_num in range(0, len(pdf_reader.pages)):
+        # 全てのページをコピー
         page_obj = pdf_reader.pages[page_num]
         pdf_writer.add_page(page_obj)
 
+    # PDFユーザーパスワード/オーナーパスワードを同じ文字列で設定
     pdf_writer.encrypt('sowrdfish')
 
 if __name__ == '__main__':
