@@ -10,6 +10,10 @@ def main():
     pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
     pdf_writer = PyPDF2.PdfWriter()
 
+    for page_num in range(0, len(pdf_reader.pages)):
+        page_obj = pdf_reader.pages[page_num]
+        pdf_writer.add_page(page_obj)
+
     pdf_writer.encrypt('sowrdfish')
 
 if __name__ == '__main__':
