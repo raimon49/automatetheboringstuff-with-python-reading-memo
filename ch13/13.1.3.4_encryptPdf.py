@@ -17,9 +17,8 @@ def main():
 
     # PDFユーザーパスワード/オーナーパスワードを同じ文字列で設定
     pdf_writer.encrypt('sowrdfish')
-    result_pdf = open('encryptedminutes.pdf', 'wb')
-    pdf_writer.write(result_pdf)
-    pdf_writer.close()
+    with open('encryptedminutes.pdf', 'wb') as result_pdf:
+        pdf_writer.write(result_pdf)
 
 if __name__ == '__main__':
     main()
