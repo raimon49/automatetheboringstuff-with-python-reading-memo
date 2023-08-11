@@ -12,6 +12,8 @@ def main():
             pdf_files.append(filename)
             pdf_files.sort(key=str.lower)
 
+    pdf_writer = PyPDF2.PdfWriter()
+
     # TODO: すべてのPDFファイルをループする
     # TODO: 先頭を除くすべてのページをループして追加する
     # TODO: 結合したPDFをファイルに保存する
