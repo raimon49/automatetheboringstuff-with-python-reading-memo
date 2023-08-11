@@ -12,6 +12,9 @@ def main():
             pdf_files.append(filename)
             pdf_files.sort(key=str.lower)
 
+    # TODO: すべてのPDFファイルをループする
+    # TODO: 先頭を除くすべてのページをループして追加する
+    # TODO: 結合したPDFをファイルに保存する
 
 if __name__ == '__main__':
     main()
