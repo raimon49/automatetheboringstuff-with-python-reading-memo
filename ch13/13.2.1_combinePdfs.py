@@ -14,7 +14,7 @@ def main():
 
     pdf_writer = PyPDF2.PdfWriter()
 
-    # TODO: すべてのPDFファイルをループする
+    # すべてのPDFファイルをループする
     for filename in pdf_files:
         with open(filename, 'rb') as pdf_file_obj:
             pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
