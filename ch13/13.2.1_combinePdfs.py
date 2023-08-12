@@ -15,6 +15,9 @@ def main():
     pdf_writer = PyPDF2.PdfWriter()
 
     # TODO: すべてのPDFファイルをループする
+    for filename in pdf_files:
+        with open(filename, 'rb') as pdf_file_obj:
+            pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
     # TODO: 先頭を除くすべてのページをループして追加する
     # TODO: 結合したPDFをファイルに保存する
 
