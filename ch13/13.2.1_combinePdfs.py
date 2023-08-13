@@ -18,6 +18,7 @@ def main():
     for filename in pdf_files:
         with open(filename, 'rb') as pdf_file_obj:
             if "encrypted" in filename:
+                # 暗号化されているPDFファイルは無視
                 continue
 
             pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
