@@ -21,7 +21,6 @@ def main():
                 continue
 
             pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
-    # TODO: 先頭を除くすべてのページをループして追加する
             for page_num in range(1, len(pdf_reader.pages)):
                 page_obj = pdf_reader.pages[page_num]
                 pdf_writer.add_page(page_obj)
