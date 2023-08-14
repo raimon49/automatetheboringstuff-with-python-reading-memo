@@ -26,7 +26,7 @@ def main():
             for page_num in range(1, len(pdf_reader.pages)):
                 page_obj = pdf_reader.pages[page_num]
                 pdf_writer.add_page(page_obj)
-    # TODO: 結合したPDFをファイルに保存する
+    # 結合したPDFをファイルに保存する
     with open('allminutes.pdf', 'wb') as pdf_output:
         pdf_writer.write(pdf_output)
 
