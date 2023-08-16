@@ -9,6 +9,7 @@ def main():
     print(len(doc.paragraphs))
 
     print(doc.paragraphs[0].text)
+    print(doc.paragraphs[1].text)
 
 if __name__ == '__main__':
     main()
