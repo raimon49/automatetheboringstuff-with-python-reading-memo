@@ -8,6 +8,8 @@ def main():
     doc = docx.Document('demo.docx')
     print(len(doc.paragraphs))
 
+    print(doc.paragraphs[0].text)
+
 if __name__ == '__main__':
     main()
 
