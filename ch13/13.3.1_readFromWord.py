@@ -8,11 +8,13 @@ def main():
     doc = docx.Document('demo.docx')
     print(len(doc.paragraphs)) # 7
 
+    # Documentオブジェクトが持つParagraphオブジェクトを参照
     print(doc.paragraphs[0].text) # Document Title
     print(doc.paragraphs[1].text) # A plain paragraph with some bold and some italic
 
     print(len(doc.paragraphs[1].runs)) # 4
 
+    # Paragraphオブジェクトが持つRunオブジェクトを参照
     print(doc.paragraphs[1].runs[0].text) # A plain paragraph with some
     print(doc.paragraphs[1].runs[1].text) # bold
     print(doc.paragraphs[1].runs[2].text) #  and some
