@@ -13,6 +13,11 @@ def main():
 
     print(len(doc.paragraphs[1].runs)) # 4
 
+    print(doc.paragraphs[1].runs[0].text)
+    print(doc.paragraphs[1].runs[1].text)
+    print(doc.paragraphs[1].runs[2].text)
+    print(doc.paragraphs[1].runs[3].text)
+
 if __name__ == '__main__':
     main()
 
