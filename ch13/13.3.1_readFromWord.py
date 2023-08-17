@@ -11,6 +11,8 @@ def main():
     print(doc.paragraphs[0].text) # Document Title
     print(doc.paragraphs[1].text) # A plain paragraph with some bold and some italic
 
+    print(len(doc.paragraphs[1].runs)) # 4
+
 if __name__ == '__main__':
     main()
 
