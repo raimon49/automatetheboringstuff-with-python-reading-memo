@@ -21,6 +21,11 @@ def main():
     print(doc.paragraphs[1].runs[3].text) # italic
 
     def get_text(filename):
+        """ .docxファイルから全テキストを取得する関数
+
+        Arguments:
+        - filename .docxファイル名
+        """
         doc = docx.Document(filename)
         full_text = []
         for para in doc.paragraphs:
