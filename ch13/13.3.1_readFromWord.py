@@ -31,7 +31,7 @@ def main():
         for para in doc.paragraphs:
             full_text.append(para.text)
 
-        return '\n'.join(full_text)
+        return '\n\n'.join(full_text)
 
     print('-------- Call get_text() --------')
     print(get_text('demo.docx'))
