@@ -20,6 +20,8 @@ def main():
          )
     ) # ('A plain paragraph with some ', 'bold', ' and some ', 'italic')
 
+    doc.paragraphs[1].runs[0].style = 'Quote Char'
+
 
 if __name__ == '__main__':
     main()
