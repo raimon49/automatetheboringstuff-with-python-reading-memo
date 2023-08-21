@@ -10,6 +10,7 @@ def main():
     print(doc.paragraphs[1].style) # _ParagraphStyle('Normal') id: 139968275939920
 
     doc.paragraphs[0].style = 'Normal'
+    print(doc.paragraphs[1].text) # A plain paragraph with some bold and some italic
 
 
 if __name__ == '__main__':
