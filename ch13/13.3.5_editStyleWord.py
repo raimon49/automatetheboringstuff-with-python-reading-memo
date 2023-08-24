@@ -23,6 +23,7 @@ def main():
     doc.paragraphs[1].runs[0].style = 'Quote Char'
     doc.paragraphs[1].runs[1].underline = True
     doc.paragraphs[1].runs[3].underline = True
+    doc.save('restyled.docx')
 
 
 if __name__ == '__main__':
