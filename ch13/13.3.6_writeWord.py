@@ -8,6 +8,8 @@ def main():
     doc = docx.Document()
     doc.add_paragraph('Hello world!!')
 
+    doc.save('helloworld.docx')
+
 if __name__ == '__main__':
     main()
 
