@@ -14,6 +14,8 @@ def main():
     para_obj2 = doc.add_paragraph('これは第3段落です')
     para_obj1.add_run(' これは第2段落に追加したテキストです。')
 
+    doc.save('multipuleParagraphs.docx')
+
 if __name__ == '__main__':
     main()
 
