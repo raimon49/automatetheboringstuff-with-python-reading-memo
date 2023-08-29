@@ -20,6 +20,8 @@ def main():
     doc.add_heading('Header 1', 1)
     doc.add_heading('Header 2', 2)
 
+    doc.save('headings.docx')
+
 if __name__ == '__main__':
     main()
 
