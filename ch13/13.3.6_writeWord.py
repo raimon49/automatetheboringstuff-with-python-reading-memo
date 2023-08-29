@@ -14,7 +14,11 @@ def main():
     para_obj2 = doc.add_paragraph('これは第3段落です')
     para_obj1.add_run(' これは第2段落に追加したテキストです。')
 
-    doc.save('multipuleParagraphs.docx')
+    # doc.save('multipuleParagraphs.docx')
+
+    doc.add_heading('Header 0', 0)
+    doc.add_heading('Header 1', 1)
+    doc.add_heading('Header 2', 2)
 
 if __name__ == '__main__':
     main()
