@@ -24,6 +24,9 @@ def main():
 
     # doc.save('headings.docx')
 
+    doc.add_paragraph('これは1ページ目')
+    doc.add_page_break()
+
 if __name__ == '__main__':
     main()
 
