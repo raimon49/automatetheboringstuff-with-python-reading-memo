@@ -26,6 +26,7 @@ def main():
 
     doc.add_paragraph('これは1ページ目')
     doc.add_page_break()
+    doc.save('twoPage.docx')
 
 if __name__ == '__main__':
     main()
