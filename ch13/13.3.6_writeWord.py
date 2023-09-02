@@ -26,7 +26,11 @@ def main():
 
     doc.add_paragraph('これは1ページ目')
     doc.add_page_break()
-    doc.save('twoPage.docx')
+    # doc.save('twoPage.docx')
+
+    doc.add_picture('zophie.png',
+                    width=docx.shared.Inches(1),
+                    height=docx.shared.Cm(4))
 
 if __name__ == '__main__':
     main()
