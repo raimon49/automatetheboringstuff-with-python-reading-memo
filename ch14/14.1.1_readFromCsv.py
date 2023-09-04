@@ -11,6 +11,8 @@ def main():
     print(example_data, end='\n\n') # [['4/5/2014 13:34', 'Apples', '73'], ['4/5/2014 3:41', 'Cherries', '85'],...
 
     print(example_data[0][0]) # 4/5/2014 13:34
+    print(example_data[0][1]) # Apples
+    print(example_data[0][2]) # 73
 
 if __name__ == '__main__':
     main()
