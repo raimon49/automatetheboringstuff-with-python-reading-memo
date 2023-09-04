@@ -14,6 +14,9 @@ def main():
     print(example_data[0][1]) # Apples
     print(example_data[0][2]) # 73
 
+    print(example_data[1][1]) # Cherries
+    print(example_data[6][1]) # Strawberries
+
 if __name__ == '__main__':
     main()
 
