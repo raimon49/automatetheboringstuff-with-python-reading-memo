@@ -10,6 +10,8 @@ def main():
     example_data = list(example_reader)
     print(example_data, end='\n\n') # [['4/5/2014 13:34', 'Apples', '73'], ['4/5/2014 3:41', 'Cherries', '85'],...
 
+    print(example_data[0][0]) # 4/5/2014 13:34
+
 if __name__ == '__main__':
     main()
 
