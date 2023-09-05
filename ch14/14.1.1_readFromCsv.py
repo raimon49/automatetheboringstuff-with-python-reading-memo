@@ -17,6 +17,9 @@ def main():
     print(example_data[1][1]) # Cherries
     print(example_data[6][1]) # Strawberries
 
+    for row in example_reader:
+        print('Row #' + str(example_reader.line_num) + ' ' str(row))
+
 if __name__ == '__main__':
     main()
 
