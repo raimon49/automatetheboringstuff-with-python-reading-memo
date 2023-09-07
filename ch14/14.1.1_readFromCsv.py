@@ -19,7 +19,7 @@ def main():
 
     print()
     i = 0
-    for row in csv.reader(open('example.csv')):
+    for row in csv.reader(open('example.csv')): # enumerate indexが進んでいるから再度読み込み直す
         print('Row #' + str(i) + ' ' + str(row))
         i = i + 1
 
