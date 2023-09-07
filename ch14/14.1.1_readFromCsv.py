@@ -17,9 +17,11 @@ def main():
     print(example_data[1][1]) # Cherries
     print(example_data[6][1]) # Strawberries
 
-    for row in example_reader:
-        pass
-        # print('Row #' + str(example_reader.line_num) + ' ' str(row))
+    print()
+    i = 0
+    for row in csv.reader(open('example.csv')):
+        print('Row #' + str(i) + ' ' + str(row))
+        i = i + 1
 
 if __name__ == '__main__':
     main()
