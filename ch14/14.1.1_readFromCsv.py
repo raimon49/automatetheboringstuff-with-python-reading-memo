@@ -23,6 +23,10 @@ def main():
         print('Row #' + str(i) + ' ' + str(row))
         i = i + 1
 
+    output_file = open('output.csv', 'w', newline='')
+    output_writer = csv.writer(output_file)
+    output_writer.writerow(['spam', 'eggs', 'bacon', 'ham'])
+
 if __name__ == '__main__':
     main()
 
