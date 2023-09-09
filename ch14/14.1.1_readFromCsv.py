@@ -23,6 +23,7 @@ def main():
         print('Row #' + str(i) + ' ' + str(row))
         i = i + 1
 
+    # Windowsでは1行空きになってしまうのを防ぐため引数newline=''を指定して開く
     with open('output.csv', 'w', newline='') as output_file:
         output_writer = csv.writer(output_file)
         output_writer.writerow(['spam', 'eggs', 'bacon', 'ham'])
