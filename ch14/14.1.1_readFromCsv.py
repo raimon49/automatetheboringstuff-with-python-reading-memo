@@ -30,13 +30,12 @@ def main():
         output_writer.writerow(['Hello, world!', 'eggs', 'bacon', 'ham'])
         output_writer.writerow([1, 2, 3.141592, 4])
 
-    for row in csv.reader(open('example.csv')):
-        with open('example.tsv', 'w', newline='') as tsv_file:
-            tsv_writer = csv.writer(tsv_file, delimiter='\t',
-                                    lineterminator='\n\n')
-            tsv_writer.writerow(['spam', 'eggs', 'bacon', 'ham'])
-            tsv_writer.writerow(['Hello, world!', 'eggs', 'bacon', 'ham'])
-            tsv_writer.writerow([1, 2, 3.141592, 4])
+    with open('example.tsv', 'w', newline='') as tsv_file:
+        tsv_writer = csv.writer(tsv_file, delimiter='\t',
+                                lineterminator='\n\n')
+        tsv_writer.writerow(['spam', 'eggs', 'bacon', 'ham'])
+        tsv_writer.writerow(['Hello, world!', 'eggs', 'bacon', 'ham'])
+        tsv_writer.writerow([1, 2, 3.141592, 4])
 
 
 
