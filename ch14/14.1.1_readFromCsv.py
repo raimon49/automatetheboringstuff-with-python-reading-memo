@@ -32,7 +32,7 @@ def main():
 
     with open('output.tsv', 'w', newline='') as tsv_file:
         tsv_writer = csv.writer(tsv_file, delimiter='\t', # 区切り文字をタブ文字に指定
-                                lineterminator='\n\n')
+                                lineterminator='\n\n')    # 行間を2つの改行コードに指定
         tsv_writer.writerow(['spam', 'eggs', 'bacon', 'ham'])
         tsv_writer.writerow(['Hello, world!', 'eggs', 'bacon', 'ham'])
         tsv_writer.writerow([1, 2, 3.141592, 4])
