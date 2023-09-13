@@ -7,6 +7,12 @@ def main():
 
     os.makedirs('headerRemoved', exist_ok=True)
 
+    for csv_filename in os.listdir('.'):
+        if not csv_filename.endswith('.csv'):
+            continue
+
+        print('見出し削除中' + csv_filename + '...')
+
 
 if __name__ == '__main__':
     main()
