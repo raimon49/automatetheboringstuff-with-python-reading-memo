@@ -21,6 +21,7 @@ def main():
             reader_obj = csv.reader(csv_file_obj)
             for row in reader_obj:
                 if reader_obj.line_num == 1:
+                    # 最初の行をスキップする
                     continue
 
             csv_rows.append(row)
