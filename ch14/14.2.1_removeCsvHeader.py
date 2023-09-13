@@ -7,8 +7,10 @@ def main():
 
     os.makedirs('headerRemoved', exist_ok=True)
 
+    # カレントディレクトリの全ファイルをループ
     for csv_filename in os.listdir('.'):
         if not csv_filename.endswith('.csv'):
+            # CSVファイルでなければスキップ
             continue
 
         print('見出し削除中' + csv_filename + '...')
