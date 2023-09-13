@@ -15,6 +15,9 @@ def main():
 
         print('見出し削除中' + csv_filename + '...')
 
+        # TODO: CSVファイルを読み込む（最初の行をスキップする）
+
+        # TODO: CSVファイルを書き出す
 
 if __name__ == '__main__':
     main()
