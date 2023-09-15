@@ -24,7 +24,7 @@ def main():
                     # 最初の行をスキップする
                     continue
 
-            csv_rows.append(row)
+                csv_rows.append(row)
 
         # CSVファイルを書き出す
         with open(os.path.join('headerRemoved', csv_filename), 'w', newline='') as csv_file_obj:
