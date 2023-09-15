@@ -27,6 +27,10 @@ def main():
             csv_rows.append(row)
 
         # TODO: CSVファイルを書き出す
+        with open(os.path.join('headerRemoved', csv_filename), 'w', newline='') as csv_file_obj:
+            csv_writer = csv.writer(csv_file_obj)
+            for row in csv_rows:
+                csv_writer.writerow(row)
 
 if __name__ == '__main__':
     main()
