@@ -25,6 +25,7 @@ def main():
                     # 最初の行をスキップする
                     continue
 
+                # 2行目以降を追加
                 csv_rows.append(row)
 
         # CSVファイルを書き出す
