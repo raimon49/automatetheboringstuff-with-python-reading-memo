@@ -9,6 +9,9 @@ def main():
     json_data_as_python_value = json.loads(string_of_json_data)
     print(json_data_as_python_value)
 
+    string_of_json_data = json.dumps(json_data_as_python_value)
+    print(string_of_json_data)
+
 
 if __name__ == '__main__':
     main()
