@@ -10,6 +10,8 @@ def main():
         print('Usage: quickWeather.py location')
         sys.exit()
 
+    # 天気予報 API（livedoor 天気互換）からデータ取得
+    # See: https://weather.tsukumijima.net/
     location = ' '.join(sys.argv[1:])
     location = '410020' # 佐賀県 伊万里
     url = 'https://weather.tsukumijima.net/api/forecast/city/{}'.format(
@@ -17,6 +19,8 @@ def main():
     )
     response = requests.get(url)
     response.raise_for_status()
+
+    # TODO: JSONデータからPython変数に読み込む
 
 
 if __name__ == '__main__':
