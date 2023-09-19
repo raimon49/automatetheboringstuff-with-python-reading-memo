@@ -21,6 +21,7 @@ def main():
     response.raise_for_status()
 
     # TODO: JSONデータからPython変数に読み込む
+    weather_data = json.loads(response.text)
 
 
 if __name__ == '__main__':
