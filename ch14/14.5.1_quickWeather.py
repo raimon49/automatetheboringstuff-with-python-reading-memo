@@ -22,6 +22,13 @@ def main():
 
     # TODO: JSONデータからPython変数に読み込む
     weather_data = json.loads(response.text)
+    w = weather_data['forecasts']
+    day0 = w[0]
+    day1 = w[1]
+    day2 = w[2]
+
+    print('今日の{}: '.format(weather_data['title']))
+    print(day0['telop'], '-', day0['detail']['weather'])
 
 
 if __name__ == '__main__':
