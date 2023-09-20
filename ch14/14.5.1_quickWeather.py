@@ -29,6 +29,8 @@ def main():
 
     print('今日の{}: '.format(weather_data['title']))
     print(day0['telop'], '-', day0['detail']['weather'])
+    print('明日: ')
+    print(day1['telop'], '-', day1['detail']['weather'])
 
 
 if __name__ == '__main__':
