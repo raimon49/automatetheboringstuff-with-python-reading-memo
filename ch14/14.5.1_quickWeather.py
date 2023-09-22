@@ -12,6 +12,7 @@ def main():
 
     # 天気予報 API（livedoor 天気互換）からデータ取得
     # See: https://weather.tsukumijima.net/
+    # ※原著ではOpenWeatherMap API (openweathermap.org) を利用している
     location = ' '.join(sys.argv[1:])
     location = '410020' # 佐賀県 伊万里
     url = 'https://weather.tsukumijima.net/api/forecast/city/{}'.format(
