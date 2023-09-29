@@ -21,7 +21,6 @@ def main():
     response = requests.get(url)
     response.raise_for_status()
 
-    # TODO: JSONデータからPython変数に読み込む
     weather_data = json.loads(response.text)
     w = weather_data['forecasts']
     day0 = w[0]
