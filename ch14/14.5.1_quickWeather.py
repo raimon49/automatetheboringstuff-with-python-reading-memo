@@ -32,6 +32,8 @@ def main():
     print(day0['telop'], '-', day0['detail']['weather'])
     print('明日: ')
     print(day1['telop'], '-', day1['detail']['weather'])
+    print('明後日: ')
+    print(day2['telop'], '-', day2['detail']['weather'])
 
 
 if __name__ == '__main__':
