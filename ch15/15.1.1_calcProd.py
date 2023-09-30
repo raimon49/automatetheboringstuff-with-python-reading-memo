@@ -12,7 +12,7 @@ def main():
 
         return product
 
-    sys.set_int_max_str_digits(50000)
+    sys.set_int_max_str_digits(50000) # require Python 3.11+
     start_time = time.time()
     prod = calc_prod()
     end_time = time.time()
