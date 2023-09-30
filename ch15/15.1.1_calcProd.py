@@ -3,7 +3,7 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 
 def main():
-    import time
+    import time, sys
 
     def calc_prod():
         product = 1
@@ -12,9 +12,11 @@ def main():
 
         return product
 
+    sys.set_int_max_str_digits(50000)
     start_time = time.time()
     prod = calc_prod()
     end_time = time.time()
+    print('計算結果は{}桁です。'.format(len(str(prod))))
 
 
 if __name__ == '__main__':
