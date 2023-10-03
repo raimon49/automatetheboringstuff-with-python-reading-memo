@@ -5,6 +5,7 @@
 def main():
     import time
 
+    # sleep()はブロックする
     for i in range(3):
         print('Tick')
         time.sleep(1)
