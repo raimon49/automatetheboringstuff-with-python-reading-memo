@@ -7,6 +7,7 @@ def main():
 
     # sleep()はブロックする
     for i in range(3):
+        # ループ中にCtrl + Cで割り込むとKeyboardInterrupt例外が発生し中断される
         print('Tick')
         time.sleep(1)
         print('Tock')
