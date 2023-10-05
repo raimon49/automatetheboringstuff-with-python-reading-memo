@@ -6,6 +6,8 @@ def main():
     import time
 
     print('Enterを押すと開始します。その後、Enterを押せば経過時間を表示します。Ctrl + Cで終了します。')
+    input()
+    print('スタート')
 
 
 if __name__ == '__main__':
