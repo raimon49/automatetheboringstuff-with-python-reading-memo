@@ -12,5 +12,7 @@ def main():
     last_time = start_time
     lap_num = 1
 
+    # TODO: ラップタイムを計測する
+
 if __name__ == '__main__':
     main()
