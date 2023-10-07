@@ -12,7 +12,7 @@ def main():
     last_time = start_time
     lap_num = 1
 
-    # TODO: ラップタイムを計測する
+    # ラップタイムを計測する
     try:
         while True:
             input()
