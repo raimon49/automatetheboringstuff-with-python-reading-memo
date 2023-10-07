@@ -13,6 +13,21 @@ def main():
     lap_num = 1
 
     # TODO: ラップタイムを計測する
+    try:
+        while True:
+            input()
+            now = time.time()
+            lap_time = round(now - last_time, 2)
+            total_time = round(now - start_time, 2)
+            print('ラップ #{}: {} ({})'.format(
+                lap_time,
+                total_time,
+                lap_time),
+            end='')
+            lap_num += 1
+            last_time = now
+    except KeyboardInterrupt:
+        print('\n終了')
 
 if __name__ == '__main__':
     main()
