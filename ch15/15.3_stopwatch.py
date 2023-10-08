@@ -27,6 +27,7 @@ def main():
             lap_num += 1
             last_time = now # ラップタイムをリセット
     except KeyboardInterrupt:
+        # Ctrl + Cで割り込まれたら終了する
         print('\n終了')
 
 if __name__ == '__main__':
