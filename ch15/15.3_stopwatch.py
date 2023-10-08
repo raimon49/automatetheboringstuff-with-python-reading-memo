@@ -25,7 +25,7 @@ def main():
                 lap_time),
             end='')
             lap_num += 1
-            last_time = now
+            last_time = now # ラップタイムをリセット
     except KeyboardInterrupt:
         print('\n終了')
 
