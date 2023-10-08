@@ -20,7 +20,7 @@ def main():
             lap_time = round(now - last_time, 2)
             total_time = round(now - start_time, 2)
             print('ラップ #{}: {} ({})'.format(
-                lap_time,
+                lap_num,
                 total_time,
                 lap_time),
             end='')
