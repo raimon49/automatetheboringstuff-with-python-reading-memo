@@ -17,8 +17,8 @@ def main():
         while True:
             input()
             now = time.time()
-            lap_time = round(now - last_time, 2)
-            total_time = round(now - start_time, 2)
+            lap_time = round(now - last_time, 2)    # 小数点第2位まで丸める
+            total_time = round(now - start_time, 2) # 小数点第2位まで丸める
             print('ラップ #{}: {} ({})'.format(
                 lap_num,
                 total_time,
