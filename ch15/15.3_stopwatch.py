@@ -19,7 +19,7 @@ def main():
             now = time.time() # Enterキーが入力される度にラップタイムを計算
             lap_time = round(now - last_time, 2)    # 小数点第2位まで丸める
             total_time = round(now - start_time, 2) # 小数点第2位まで丸める
-            print('ラップ #{}: {} ({})'.format(
+            print('ラップ #{}: {} ({})'.format(     # ラップ番号、合計経過時間、ラップタイムを表示
                 lap_num,
                 total_time,
                 lap_time),
