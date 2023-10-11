@@ -11,5 +11,7 @@ def main():
     print(dt.year, dt.month, dt.day)
     print(dt.hour, dt.minute, dt.second)
 
+    print(datetime.datetime.fromtimestamp(10000000))
+
 if __name__ == '__main__':
     main()
