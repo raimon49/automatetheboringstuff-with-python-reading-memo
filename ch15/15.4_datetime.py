@@ -7,9 +7,9 @@ def main():
 
     print(datetime.datetime.now())
 
-    dt = datetime.datetime(2015, 10, 21, 16, 29, 0)
-    print(dt.year, dt.month, dt.day)
-    print(dt.hour, dt.minute, dt.second)
+    dt = datetime.datetime(2015, 10, 21, 16, 29, 0) # 2023-10-11 21:06:01.092813
+    print(dt.year, dt.month, dt.day)                # 2015 10 21
+    print(dt.hour, dt.minute, dt.second)            # 16 29 0
 
     print(datetime.datetime.fromtimestamp(10000000))
 
