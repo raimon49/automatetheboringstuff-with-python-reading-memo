@@ -9,9 +9,9 @@ def main():
 
     dt = datetime.datetime(2015, 10, 21, 16, 29, 0) # 2023-10-11 21:06:01.092813
     print(dt.year, dt.month, dt.day)                # 2015 10 21
-    print(dt.hour, dt.minute, dt.second)            # 16 29 0
+    print(dt.hour, dt.minute, dt.second)            # 15 29 0
 
-    print(datetime.datetime.fromtimestamp(10000000))
+    print(datetime.datetime.fromtimestamp(10000000)) # 1970-04-27 02:46:40
 
 if __name__ == '__main__':
     main()
