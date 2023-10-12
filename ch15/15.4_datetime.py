@@ -3,7 +3,7 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 
 def main():
-    import datetime
+    import datetime, time
 
     print(datetime.datetime.now())
 
@@ -12,6 +12,7 @@ def main():
     print(dt.hour, dt.minute, dt.second)            # 15 29 0
 
     print(datetime.datetime.fromtimestamp(10000000)) # 1970-04-27 02:46:40
+    print(datetime.datetime.fromtimestamp(time.time()))
 
 if __name__ == '__main__':
     main()
