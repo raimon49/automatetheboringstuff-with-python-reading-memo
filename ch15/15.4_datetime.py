@@ -11,8 +11,8 @@ def main():
     print(dt.year, dt.month, dt.day)                # 2015 10 21
     print(dt.hour, dt.minute, dt.second)            # 15 29 0
 
-    print(datetime.datetime.fromtimestamp(10000000)) # 1970-04-27 02:46:40
-    print(datetime.datetime.fromtimestamp(time.time()))
+    print(datetime.datetime.fromtimestamp(10000000))    # 1970-04-27 02:46:40
+    print(datetime.datetime.fromtimestamp(time.time())) # 現在時刻から日付・時刻を生成
 
 if __name__ == '__main__':
     main()
