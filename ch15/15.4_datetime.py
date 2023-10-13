@@ -14,5 +14,9 @@ def main():
     print(datetime.datetime.fromtimestamp(10000000))    # 1970-04-27 02:46:40
     print(datetime.datetime.fromtimestamp(time.time())) # 現在時刻から日付・時刻を生成
 
+    halloween2015 = datetime.datetime(2015, 10, 31, 0, 0, 0)
+    newyear2016 = datetime.datetime(2016, 1, 1, 0, 0, 0)
+    print(halloween2015 > newyear2016)
+
 if __name__ == '__main__':
     main()
