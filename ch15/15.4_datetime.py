@@ -17,6 +17,7 @@ def main():
     halloween2015 = datetime.datetime(2015, 10, 31, 0, 0, 0)
     newyear2016 = datetime.datetime(2016, 1, 1, 0, 0, 0)
     print(halloween2015 > newyear2016) # False
+    print(newyear2016 > halloween2015)
 
 if __name__ == '__main__':
     main()
