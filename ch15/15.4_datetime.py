@@ -20,6 +20,7 @@ def main():
     print(halloween2015 == oct31_2015) # True
     print(halloween2015 > newyear2016) # False
     print(newyear2016 > halloween2015) # True
+    print(newyear2016 != oct31_2015)
 
 if __name__ == '__main__':
     main()
