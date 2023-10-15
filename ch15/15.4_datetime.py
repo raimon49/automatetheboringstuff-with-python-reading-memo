@@ -22,5 +22,8 @@ def main():
     print(newyear2016 > halloween2015) # True
     print(newyear2016 != oct31_2015)   # True
 
+    delta = datetime.timedelta(days=11, hours=10, minutes=9, seconds=8)
+    print(delta.days, delta.seconds, delta.microseconds)
+
 if __name__ == '__main__':
     main()
