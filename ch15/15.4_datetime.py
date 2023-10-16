@@ -23,7 +23,7 @@ def main():
     print(newyear2016 != oct31_2015)   # True
 
     delta = datetime.timedelta(days=11, hours=10, minutes=9, seconds=8)
-    print(delta.days, delta.seconds, delta.microseconds)
+    print(delta.days, delta.seconds, delta.microseconds) # 11 36548 0
 
 if __name__ == '__main__':
     main()
