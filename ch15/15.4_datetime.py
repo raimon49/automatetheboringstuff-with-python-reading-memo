@@ -30,7 +30,7 @@ def main():
     dt_now = datetime.datetime.now()
     print(dt_now)
     thousand_days = datetime.timedelta(days=1000)
-    print(dt_now + thousand_days)
+    print(dt_now + thousand_days) # 現在日時の1,000日後を計算
 
 if __name__ == '__main__':
     main()
