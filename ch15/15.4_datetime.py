@@ -27,5 +27,10 @@ def main():
     print(delta.total_seconds())                         # 986948.0
     print(str(delta))                                    # 11 days, 10:09:08
 
+    dt_now = datetime.datetime.now()
+    print(dt_now)
+    thousand_days = datetime.timedelta(days=1000)
+    print(dt_now + thousand_days)
+
 if __name__ == '__main__':
     main()
