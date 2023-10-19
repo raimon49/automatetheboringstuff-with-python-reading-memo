@@ -32,5 +32,10 @@ def main():
     thousand_days = datetime.timedelta(days=1000)
     print(dt_now + thousand_days) # 現在日時の1,000日後を計算
 
+    oct21st = datetime.datetime(2015, 10, 21, 16, 29, 0)
+    about_thirty_years = datetime.timedelta(days=365 * 30)
+    print(oct21st)
+    print(oct21st - about_thirty_years)
+
 if __name__ == '__main__':
     main()
