@@ -34,8 +34,8 @@ def main():
 
     oct21st = datetime.datetime(2015, 10, 21, 16, 29, 0)
     about_thirty_years = datetime.timedelta(days=365 * 30)
-    print(oct21st)
-    print(oct21st - about_thirty_years)
+    print(oct21st)                      # 2015-10-21 16:29:00
+    print(oct21st - about_thirty_years) # 1985-10-28 16:29:00
 
 if __name__ == '__main__':
     main()
