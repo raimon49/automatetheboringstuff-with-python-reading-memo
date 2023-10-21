@@ -33,7 +33,7 @@ def main():
     print(dt_now + thousand_days) # 現在日時の1,000日後を計算
 
     oct21st = datetime.datetime(2015, 10, 21, 16, 29, 0)
-    about_thirty_years = datetime.timedelta(days=365 * 30)
+    about_thirty_years = datetime.timedelta(days=365 * 30) # 1年365日と仮定して30年の期間を生成
     print(oct21st)                              # 2015-10-21 16:29:00
     print(oct21st - about_thirty_years)         # 1985-10-28 16:29:00
     print(oct21st  -  (2 * about_thirty_years)) # 1955-11-05 16:29:00
