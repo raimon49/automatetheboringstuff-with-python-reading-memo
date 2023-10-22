@@ -39,7 +39,7 @@ def main():
     print(oct21st  -  (2 * about_thirty_years)) # 1955-11-05 16:29:00
 
     print(oct21st.strftime('%Y/%m/%d %H:%M:%S')) # 2015/10/21 16:29:00
-    print(oct21st.strftime('%I:%M: %p'))
+    print(oct21st.strftime('%I:%M: %p'))         # 04:29: PM
 
 if __name__ == '__main__':
     main()
