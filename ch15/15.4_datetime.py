@@ -40,6 +40,7 @@ def main():
 
     print(oct21st.strftime('%Y/%m/%d %H:%M:%S')) # 2015/10/21 16:29:00
     print(oct21st.strftime('%I:%M: %p'))         # 04:29: PM
+    print(oct21st.strftime("%B of '%y"))
 
 if __name__ == '__main__':
     main()
