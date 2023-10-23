@@ -42,5 +42,7 @@ def main():
     print(oct21st.strftime('%I:%M: %p'))         # 04:29: PM
     print(oct21st.strftime("%B of '%y"))         # October of '15
 
+    print(datetime.datetime.strptime('October 21, 2015', '%B %d, %Y'))
+
 if __name__ == '__main__':
     main()
