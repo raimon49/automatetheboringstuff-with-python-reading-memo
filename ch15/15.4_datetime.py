@@ -43,7 +43,7 @@ def main():
     print(oct21st.strftime("%B of '%y"))         # October of '15
 
     print(datetime.datetime.strptime(
-        'October 21, 2015', '%B %d, %Y'
+        'October 21, 2015', '%B %d, %Y'            # 2015-10-21 00:00:00
     ))
     print(datetime.datetime.strptime(
         '2015/10/21 16:29:00', '%Y/%m/%d %H:%M:%S' # 2015-10-21 16:29:00
