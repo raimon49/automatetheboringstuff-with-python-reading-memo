@@ -49,7 +49,7 @@ def main():
         '2015/10/21 16:29:00', '%Y/%m/%d %H:%M:%S' # 2015-10-21 16:29:00
     ))
     print(datetime.datetime.strptime(
-        "October of '15", "%B of '%y"
+        "October of '15", "%B of '%y"              # 2015-10-01 00:00:00
     ))
 
 if __name__ == '__main__':
