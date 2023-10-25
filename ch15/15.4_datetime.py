@@ -52,7 +52,7 @@ def main():
         "October of '15", "%B of '%y"              # 2015-10-01 00:00:00
     ))
     print(datetime.datetime.strptime(
-        "November of '63", "%B of '%y"
+        "November of '63", "%B of '%y"             # 2063-11-01 00:00:00
     ))
 
 if __name__ == '__main__':
