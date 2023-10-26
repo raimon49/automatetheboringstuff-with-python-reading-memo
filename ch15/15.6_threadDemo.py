@@ -12,9 +12,13 @@ def main():
         print('起きた!')
 
     thread_obj = threading.Thread(target=take_a_nap)
-    thread_obj.start()
+    thread_obj.start() # take_a_nap関数を新しいスレッドで実行開始
 
     print('プログラム終了')
+
+    # プログラム開始
+    # プログラム終了
+    # 起きた!
 
 
 if __name__ == '__main__':
