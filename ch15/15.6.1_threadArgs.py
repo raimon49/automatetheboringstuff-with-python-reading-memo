@@ -10,7 +10,7 @@ def main():
         args=['Cats', 'Dogs', 'Frogs'],
         kwargs={'sep': ' & '}
     )
-    thread_obj.start()
+    thread_obj.start() # print('Cat', 'Dogs', 'Frogs', sep='&') を別スレッドで実行される
 
 
 if __name__ == '__main__':
