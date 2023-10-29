@@ -8,6 +8,14 @@ def main():
     url = 'https://xkcd.com'
     os.makedirs('xkcd', exist_ok=True)
 
+    def download_xkcd(start_comic, end_comic):
+        for url_number in range(start_comic, end_comic):
+            # ページをダウンロードする
+            print('ページをダウンロード中 {}/{}'.format(url, url_number))
+            res = requests.get('{}/{}'.format(url, url_number))
+            res.raise_for_status()
+            soup = bs4.BeautifulSoup(res.text, 'html.parser')
+
     # 全ての画像URLを見つけるまで繰り返す
     IS_DOWNLOAD = False
     while not url.endswith('#'):
