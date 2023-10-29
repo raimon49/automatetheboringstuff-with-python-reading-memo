@@ -16,6 +16,15 @@ def main():
             res.raise_for_status()
             soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
+            # コミックの画像URLを見つける
+            comic_elem = soup.select('#comic img')
+            if comic_elem == []:
+                print('コミック画像が見つかりませんでした')
+            else:
+                print('コミック画像が見つかりました')
+                comic_url = 'https:' + comic_elem[0].get('src')
+
+
     # 全ての画像URLを見つけるまで繰り返す
     IS_DOWNLOAD = False
     while not url.endswith('#'):
