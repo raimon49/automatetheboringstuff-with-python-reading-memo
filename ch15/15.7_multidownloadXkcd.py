@@ -33,6 +33,8 @@ def main():
                     for chunk in img.iter_content(100000):
                         img_file.write(chunk)
 
+    # TODO: Treadオブジェクトを生成して開始する
+    # TODO: すべてのスレッドが終了するのを待つ
 
     # 全ての画像URLを見つけるまで繰り返す
     IS_DOWNLOAD = False
