@@ -24,6 +24,15 @@ def main():
                 print('コミック画像が見つかりました')
                 comic_url = 'https:' + comic_elem[0].get('src')
 
+                # 画像をダウンロードする
+                print('画像をダウンロード中 {}...'.format(comic_url))
+                img = requests.get(url)
+                img.raise_for_status()
+                # 画像を./xkcd ディレクトリに保存する
+                with open(os.path.join('xkcd', os.path.basename(comic_url)), 'wb') as img_file:
+                    for chunk in img.iter_content(100000):
+                        img_file.write(chunk)
+
 
     # 全ての画像URLを見つけるまで繰り返す
     IS_DOWNLOAD = False
