@@ -35,6 +35,8 @@ def main():
 
     # TODO: Treadオブジェクトを生成して開始する
     download_threads = []
+    for i in rainge(1, 1400, 100):
+        pass
     # TODO: すべてのスレッドが終了するのを待つ
 
     download_xkcd(1, 3)
