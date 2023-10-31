@@ -3,7 +3,7 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 
 def main():
-    import requests, os, bs4
+    import requests, os, bs4, threading
 
     url = 'https://xkcd.com'
     os.makedirs('xkcd', exist_ok=True)
@@ -34,7 +34,11 @@ def main():
                         img_file.write(chunk)
 
     # TODO: Treadオブジェクトを生成して開始する
+    download_threads = []
     # TODO: すべてのスレッドが終了するのを待つ
+
+    download_xkcd(1, 3)
+    return
 
     # 全ての画像URLを見つけるまで繰り返す
     IS_DOWNLOAD = False
