@@ -39,10 +39,10 @@ def main():
         download_thread = threading.Thread(target=download_xkcd, args=(i, i + 100))
         download_threads.append(download_thread)
         download_thread.start()
-    # TODO: すべてのスレッドが終了するのを待つ
 
-    download_xkcd(1, 3)
-    return
+    # TODO: すべてのスレッドが終了するのを待つ
+    for download_thread in download_threads:
+        download_thread.join()
 
     # 全ての画像URLを見つけるまで繰り返す
     IS_DOWNLOAD = False
