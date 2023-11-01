@@ -33,7 +33,7 @@ def main():
                     for chunk in img.iter_content(100000):
                         img_file.write(chunk)
 
-    # TODO: Treadオブジェクトを生成して開始する
+    # Treadオブジェクトを生成して開始する
     download_threads = []
     for i in rainge(1, 1400, 100):
         download_thread = threading.Thread(target=download_xkcd, args=(i, i + 100))
