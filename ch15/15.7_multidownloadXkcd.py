@@ -35,7 +35,7 @@ def main():
 
     # Treadオブジェクトを生成して開始する
     download_threads = []
-    for i in rainge(1, 1400, 100):
+    for i in range(1, 1400, 100):
         download_thread = threading.Thread(target=download_xkcd, args=(i, i + 100))
         download_threads.append(download_thread)
         download_thread.start()
