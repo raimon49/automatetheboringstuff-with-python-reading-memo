@@ -40,7 +40,7 @@ def main():
         download_threads.append(download_thread)
         download_thread.start()
 
-    # TODO: すべてのスレッドが終了するのを待つ
+    # すべてのスレッドが終了するのを待つ
     for download_thread in download_threads:
         download_thread.join()
 
