@@ -44,6 +44,8 @@ def main():
     for download_thread in download_threads:
         download_thread.join()
 
+    print('完了')
+
 
 if __name__ == '__main__':
     main()
