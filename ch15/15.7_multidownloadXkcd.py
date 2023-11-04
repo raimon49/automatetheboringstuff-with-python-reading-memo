@@ -35,13 +35,15 @@ def main():
 
     # Treadオブジェクトを生成して開始する
     download_threads = []
-    for i in range(1, 1400, 100):
-        download_thread = threading.Thread(target=download_xkcd, args=(i, i + 100))
+    for i in range(1, 1400, 100): # 14回ループし、14個のスレッドを生成
+        download_thread = threading.Thread(target=download_xkcd, args=(i, i + 100)) # (1, 101), (101, 201)...と引数を指定
         download_threads.append(download_thread)
         download_thread.start()
 
     # すべてのスレッドが終了するのを待つ
     for download_thread in download_threads:
+        # スレッド終了まで待機させる
+        # https://docs.python.org/ja/3/library/threading.html#threading.Thread.join
         download_thread.join()
 
     print('完了')
