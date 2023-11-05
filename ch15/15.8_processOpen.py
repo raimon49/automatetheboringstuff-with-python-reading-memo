@@ -5,7 +5,7 @@
 def main():
     import subprocess
 
-    proc = subprocess.Popen('/usr/bin/ls')
+    proc = subprocess.Popen('/usr/bin/ls') # <Popen: returncode: None args: '/usr/bin/ls'>
     print(proc)
 
 
