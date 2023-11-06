@@ -6,7 +6,7 @@ def main():
     import subprocess
 
     proc = subprocess.Popen('/usr/bin/ls') # <Popen: returncode: None args: '/usr/bin/ls'>
-    print(proc)
+    print(proc.poll() == None)
 
 
 if __name__ == '__main__':
