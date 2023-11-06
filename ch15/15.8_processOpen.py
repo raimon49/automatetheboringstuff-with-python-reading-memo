@@ -7,7 +7,7 @@ def main():
 
     proc = subprocess.Popen('/usr/bin/ls') # <Popen: returncode: None args: '/usr/bin/ls'>
     print(proc.poll() == None) # True
-    print(proc.wait())
+    print(proc.wait())         # 0
 
 
 if __name__ == '__main__':
