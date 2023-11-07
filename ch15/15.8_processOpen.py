@@ -10,6 +10,8 @@ def main():
     print(proc.wait())         # 0
     print(proc.poll())         # 0
 
+    subprocess.Popen(['/usr/bin/ls', '/usr/bin'])
+
 
 if __name__ == '__main__':
     main()
