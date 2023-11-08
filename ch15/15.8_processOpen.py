@@ -10,7 +10,7 @@ def main():
     print(proc.wait())         # 0
     print(proc.poll())         # 0
 
-    subprocess.Popen(['/usr/bin/ls', '/usr/bin'])
+    subprocess.Popen(['/usr/bin/ls', '/usr/bin']) # Popenで呼び出す外部コマンドに引数を渡す（ls /usr/bin）
 
 
 if __name__ == '__main__':
