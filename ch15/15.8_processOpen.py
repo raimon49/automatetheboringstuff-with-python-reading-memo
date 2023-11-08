@@ -12,7 +12,7 @@ def main():
 
     subprocess.Popen(['/usr/bin/ls', '/usr/bin']) # Popenで呼び出す外部コマンドに引数を渡す（ls /usr/bin）
 
-    subprocess.Popen([sys.executable, '../ch01/1.5_first_program.py'])
+    # subprocess.Popen([sys.executable, '../ch01/1.5_first_program.py']) # 外部Pythonスクリプトの実行
 
 
 if __name__ == '__main__':
