@@ -12,6 +12,7 @@ def main():
         time_left = time_left - 1
 
     # TODO: カウントダウン後に音声ファイルを再生する
+    subprocess.Popen(['printf', 'Exit\n'])
 
 
 if __name__ == '__main__':
