@@ -11,6 +11,8 @@ def main():
         time.sleep(1)
         time_left = time_left - 1
 
+    # TODO: カウントダウン後に音声ファイルを再生する
+
 
 if __name__ == '__main__':
     main()
