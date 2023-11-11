@@ -9,7 +9,7 @@ def main():
     while time_left > 0:
         # カウントダウンを出力
         subprocess.Popen(['echo', str(time_left)])
-        time.sleep(1)
+        time.sleep(1) # 1秒待機
         time_left = time_left - 1
 
     # カウントダウン後に完了を出力する
