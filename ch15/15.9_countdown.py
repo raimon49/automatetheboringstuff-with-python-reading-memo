@@ -15,6 +15,9 @@ def main():
     # カウントダウン後に完了を出力する
     subprocess.Popen(['printf', 'Exit\n'])
 
+    # macOSで計算機アプリを開く場合
+    # subprocess.Popen(['open', '/Application/Caluculator.app/'])
+
 
 if __name__ == '__main__':
     main()
