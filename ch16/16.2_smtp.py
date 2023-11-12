@@ -7,6 +7,7 @@ def main():
 
     smtp_obj = smtplib.SMTP('smtp.example.com', 587)
     print(smtp_obj.ehlo())
+    print(smtp_obj.starttls())
 
 
 if __name__ == '__main__':
