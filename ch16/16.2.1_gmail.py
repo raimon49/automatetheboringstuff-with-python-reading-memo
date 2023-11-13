@@ -9,6 +9,9 @@ def main():
     smtp_obj = smtplib.SMTP('smtp.gmail.com', 587)
     print(type(smtp_obj))
 
+    smtp_ssl = smtplib.SMTP_SSL('smtp.gmai.com', 465)
+    print(type(smtp_ssl))
+
 
 if __name__ == '__main__':
     main()
