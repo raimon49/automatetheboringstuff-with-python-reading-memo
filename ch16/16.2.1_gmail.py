@@ -9,6 +9,7 @@ def main():
     smtp_obj = smtplib.SMTP('smtp.gmail.com', 587)
     print(type(smtp_obj))
 
+    # GmailのSMTPサーバーにTLS接続
     smtp_ssl = smtplib.SMTP_SSL('smtp.gmai.com', 465)
     print(type(smtp_ssl))
 
