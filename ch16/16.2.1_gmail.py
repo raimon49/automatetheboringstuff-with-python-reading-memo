@@ -10,8 +10,8 @@ def main():
     print(type(smtp_obj))
 
     # GmailのSMTPサーバーにTLS接続
-    smtp_ssl = smtplib.SMTP_SSL('smtp.gmai.com', 465)
-    print(type(smtp_ssl))
+    # smtp_ssl = smtplib.SMTP_SSL('smtp.gmai.com', 465)
+    # print(type(smtp_ssl))
 
 
 if __name__ == '__main__':
