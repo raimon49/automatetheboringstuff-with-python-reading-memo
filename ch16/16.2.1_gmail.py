@@ -5,6 +5,7 @@
 def main():
     import smtplib
 
+    # GmailのSMTPサーバーに接続
     smtp_obj = smtplib.SMTP('smtp.gmail.com', 587)
     print(type(smtp_obj))
 
