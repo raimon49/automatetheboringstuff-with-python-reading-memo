@@ -13,6 +13,8 @@ def main():
     # smtp_ssl = smtplib.SMTP_SSL('smtp.gmai.com', 465)
     # print(type(smtp_ssl))
 
+    print(smtp_obj.ehlo()) # (250, b'smtp.gmail.com at your service, [114.152.124.80]\nSIZE 35882577\n8BITMIME\nSTARTTLS\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8')
+
 
 if __name__ == '__main__':
     main()
