@@ -16,6 +16,8 @@ def main():
     print(smtp_obj.ehlo())     # (250, b'smtp.gmail.com at your service, [114.152.124.80]\nSIZE 35882577\n8BITMIME\nSTARTTLS\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8')
     print(smtp_obj.starttls()) # (220, b'2.0.0 Ready to start TLS')
 
+    print(smtp_obj.login('my_email_address@gmail.com', 'MY_PASS')) # (235, b'2.7.0 Accepted')
+
 
 if __name__ == '__main__':
     main()
