@@ -21,6 +21,21 @@ def main():
     #                         'recipient@example.com',
     #                         'Subject: Solong.\nDearAlice, so long and thanks for all the fish. Sincerely, Bob'))
 
+    # 日本語のメール送信
+    from email.mime.text import MIMEText
+    from email.header import Header
+
+    charset = 'iso-2022-jp'
+    msg = MIMEText('日本語の全文', 'plain', charset)
+    msg['Subject'] = Header('日本語の件名'.encode(charset), charset)
+
+    smtp_obj = smtplib.SMTP('smtp.example.com', 587)
+    smtp_obj.ehlo()
+    smtp_obj.starttls()
+    smtp_obj.login('my_email_address@example.com', 'MY_PASS')
+    smtp_obj.sendmail('my_email_address@example.com', 'to@example.com' msg.as_string())
+    smtp_obj.quit()
+
 
 if __name__ == '__main__':
     main()
