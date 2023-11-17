@@ -35,6 +35,7 @@ def main():
     # smtp_obj.login('my_email_address@example.com', 'MY_PASS')
     # smtp_obj.sendmail('my_email_address@example.com', 'to@example.com' msg.as_string())
 
+    # GmailのSMTPサーバーから切断
     smtp_obj.quit()
 
 
