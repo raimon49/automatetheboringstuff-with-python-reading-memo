@@ -34,7 +34,8 @@ def main():
     # smtp_obj.starttls()
     # smtp_obj.login('my_email_address@example.com', 'MY_PASS')
     # smtp_obj.sendmail('my_email_address@example.com', 'to@example.com' msg.as_string())
-    # smtp_obj.quit()
+
+    smtp_obj.quit()
 
 
 if __name__ == '__main__':
