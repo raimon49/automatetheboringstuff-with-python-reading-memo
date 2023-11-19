@@ -9,6 +9,7 @@ def main():
     imap_obj = imapclient.IMAPClient('imap.gmail.com',
                                      ssl=True,
                                      ssl_context=context)
+    imap_obj.login('my_email_address@gmail.com', 'MY_PASS')
 
 
 if __name__ == '__main__':
