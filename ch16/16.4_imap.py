@@ -10,6 +10,7 @@ def main():
                                      ssl=True,
                                      ssl_context=context)
     imap_obj.login('my_email_address@gmail.com', 'MY_PASS')
+    imap_obj.select_folder('INBOX', readonly=True)
 
 
 if __name__ == '__main__':
