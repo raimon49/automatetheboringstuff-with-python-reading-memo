@@ -14,6 +14,8 @@ def main():
 
     UIDs = imap_obj.search(['SINCE', '05-Jul-2014'])
 
+    imap_obj.logout()
+
 
 if __name__ == '__main__':
     main()
