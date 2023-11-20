@@ -12,6 +12,8 @@ def main():
     imap_obj.login('my_email_address@gmail.com', 'MY_PASS')
     imap_obj.select_folder('INBOX', readonly=True)
 
+    UIDs = imap_obj.search(['SINCE', '05-Jul-2014'])
+
 
 if __name__ == '__main__':
     main()
