@@ -18,6 +18,7 @@ def main():
     folders = imap_obj.list_folders()
     imap_obj.select_folder('INBOX', readonly=True)
 
+    # 2014年7月5日以降のメールを検索
     UIDs = imap_obj.search(['SINCE', '05-Jul-2014'])
 
     imap_obj.logout()
