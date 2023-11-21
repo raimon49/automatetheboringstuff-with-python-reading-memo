@@ -10,6 +10,7 @@ def main():
                                      ssl=True,
                                      ssl_context=context)
     imap_obj.login('my_email_address@gmail.com', 'MY_PASS')
+    folders = imap_obj.list_folders()
     imap_obj.select_folder('INBOX', readonly=True)
 
     UIDs = imap_obj.search(['SINCE', '05-Jul-2014'])
