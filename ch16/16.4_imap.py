@@ -13,6 +13,8 @@ def main():
 
     # IMAPサーバーにログイン
     imap_obj.login('my_email_address@gmail.com', 'MY_PASS')
+
+    # フォルダを選択
     folders = imap_obj.list_folders()
     imap_obj.select_folder('INBOX', readonly=True)
 
