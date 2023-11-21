@@ -5,10 +5,13 @@
 def main():
     import imapclient, ssl
 
+    # IMAPサーバーに接続
     context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
     imap_obj = imapclient.IMAPClient('imap.gmail.com',
                                      ssl=True,
                                      ssl_context=context)
+
+    # IMAPサーバーにログイン
     imap_obj.login('my_email_address@gmail.com', 'MY_PASS')
     folders = imap_obj.list_folders()
     imap_obj.select_folder('INBOX', readonly=True)
