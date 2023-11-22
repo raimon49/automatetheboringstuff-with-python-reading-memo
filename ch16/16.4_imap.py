@@ -24,6 +24,8 @@ def main():
     # 選択中フォルダの全てのメールを取得
     UIDs = imap_obj.search(['ALL'])
 
+    UIDs = imap_obj.search(['ON', '05-Jul-2014'])
+
     imap_obj.logout()
 
 
