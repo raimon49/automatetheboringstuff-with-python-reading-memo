@@ -21,6 +21,9 @@ def main():
     # 2014年7月5日以降のメールを検索
     UIDs = imap_obj.search(['SINCE', '05-Jul-2014'])
 
+    # 選択中フォルダの全てのメールを取得
+    UIDs = imap_obj.search(['ALL'])
+
     imap_obj.logout()
 
 
