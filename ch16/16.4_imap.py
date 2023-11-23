@@ -27,6 +27,7 @@ def main():
     # 2015年7月5日の全てのメールを検索
     UIDs = imap_obj.search(['ON', '05-Jul-2014'])
 
+    # 2015年1月の未読メールを検索（2015-01-01は含まれるが2015-02-01は含まれない）
     UIDs = imap_obj.search(['SINCE', '01-Jan-2015', 'BEFORE',
                             '01-Feb-2015', 'UNSEEN'])
 
