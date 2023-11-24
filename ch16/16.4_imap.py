@@ -39,6 +39,9 @@ def main():
     UIDs = imap_obj.search(['SINCE', '01-Jan-2015', 'NOT', 'FROM',
                             'alice@example.com'])
 
+    UIDs = imap_obj.search('OR', 'FROM', 'alice@example.com',
+                           'FROM', 'bob@example.com')
+
     imap_obj.logout()
 
 
