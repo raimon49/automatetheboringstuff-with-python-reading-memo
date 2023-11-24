@@ -35,6 +35,7 @@ def main():
     UIDs = imap_obj.search(['SINCE', '01-Jan-2015', 'FROM',
                             'alice@example.com'])
 
+    # 2015年1月1日以降にalice以外から届いた全てのメールを検索
     UIDs = imap_obj.search(['SINCE', '01-Jan-2015', 'NOT', 'FROM',
                             'alice@example.com'])
 
