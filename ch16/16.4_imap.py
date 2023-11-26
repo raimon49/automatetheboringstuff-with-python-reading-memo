@@ -43,6 +43,7 @@ def main():
     UIDs = imap_obj.search('OR', 'FROM', 'alice@example.com',
                            'FROM', 'bob@example.com')
 
+    # メールには1つのFromヘッダーしか無いので、1つも検索条件にマッチしない
     UIDs = imap_obj.search('FROM', 'alice@example.com', # UIDs = []
                            'FROM', 'bob@example.com')
 
