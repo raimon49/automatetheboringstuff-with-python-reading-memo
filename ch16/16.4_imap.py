@@ -47,6 +47,7 @@ def main():
     UIDs = imap_obj.search('FROM', 'alice@example.com', # UIDs = []
                            'FROM', 'bob@example.com')
 
+    # Gmailの高度な検索エンジンを使った検索
     UIDs = imap_obj.gmail_search('meaning of life')
 
     imap_obj.logout()
