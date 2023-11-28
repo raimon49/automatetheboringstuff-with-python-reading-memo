@@ -51,6 +51,8 @@ def main():
     UIDs = imap_obj.gmail_search('meaning of life')
 
     # メールを取得し、既読マークを付ける
+    # （既読を付けず取得するには、 readonly=Falseで事前のフォルダ選択をする）
+    # imap_obj.select_folder('INBOX', readonly=False)
     raw_massages = imap_obj.fetch(UIDs, ['BODY[]'])
 
     imap_obj.logout()
