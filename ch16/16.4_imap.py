@@ -50,6 +50,8 @@ def main():
     # Gmailの高度な検索エンジンを使った検索
     UIDs = imap_obj.gmail_search('meaning of life')
 
+    raw_massages = imap_obj.fetch(UIDs, ['BODY[]'])
+
     imap_obj.logout()
 
 
