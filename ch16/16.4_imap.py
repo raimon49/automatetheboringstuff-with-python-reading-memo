@@ -55,6 +55,9 @@ def main():
     # imap_obj.select_folder('INBOX', readonly=False)
     raw_massages = imap_obj.fetch(UIDs, ['BODY[]'])
 
+    imap_obj.select_folder('INBOX', readonly=False)
+    imap_obj.delete_messages(UIDs)
+
     imap_obj.logout()
 
 
