@@ -58,6 +58,7 @@ def main():
     # メール削除可能なようreadonly=Falseでフォルダを選択してから、削除マークする
     imap_obj.select_folder('INBOX', readonly=False)
     imap_obj.delete_messages(UIDs)
+    imap_obj.expunge()
 
     imap_obj.logout()
 
