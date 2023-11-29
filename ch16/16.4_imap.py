@@ -55,6 +55,7 @@ def main():
     # imap_obj.select_folder('INBOX', readonly=False)
     raw_massages = imap_obj.fetch(UIDs, ['BODY[]'])
 
+    # メール削除可能なようreadonly=Falseでフォルダを選択してから、削除マークする
     imap_obj.select_folder('INBOX', readonly=False)
     imap_obj.delete_messages(UIDs)
 
