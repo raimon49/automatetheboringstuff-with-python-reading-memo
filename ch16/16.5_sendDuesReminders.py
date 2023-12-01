@@ -8,6 +8,8 @@ def main():
     wb = openpyxl.load_workbook('duesRecords.xlsx')
     sheet = wb['Sheet1']
 
+    last_col = sheet.max_column
+
 
 if __name__ == '__main__':
     main()
