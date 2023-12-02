@@ -11,6 +11,10 @@ def main():
     last_col = sheet.max_column
     last_month = sheet.cell(row=1, column=last_col).value # 最新月を取得
 
+    # TODO: 会員の支払い状況を調べる
+    # TODO: メールアカウントにログインする
+    # TODO: リマインダーメールを送信する
+
 
 if __name__ == '__main__':
     main()
