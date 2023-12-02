@@ -9,6 +9,7 @@ def main():
     sheet = wb['Sheet1']
 
     last_col = sheet.max_column
+    last_month = sheet.cell(row=1, column=last_col).value
 
 
 if __name__ == '__main__':
