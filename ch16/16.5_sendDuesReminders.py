@@ -14,7 +14,7 @@ def main():
     # TODO: 会員の支払い状況を調べる
     unpaied_members = {}
     for r in range(2, sheet.max_row + 1):
-        payment = sheet.cell(row=r, column=last_col).value
+        payment = sheet.cell(row=r, column=last_col).value # 'paid' or None
     # TODO: メールアカウントにログインする
     # TODO: リマインダーメールを送信する
 
