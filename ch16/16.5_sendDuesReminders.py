@@ -15,6 +15,8 @@ def main():
     unpaied_members = {}
     for r in range(2, sheet.max_row + 1):
         payment = sheet.cell(row=r, column=last_col).value # 'paid' or None
+        if payment != 'paid':
+            name = sheet.cell(row=r, column=1).value
     # TODO: メールアカウントにログインする
     # TODO: リマインダーメールを送信する
 
