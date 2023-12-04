@@ -17,6 +17,7 @@ def main():
         payment = sheet.cell(row=r, column=last_col).value # 'paid' or None
         if payment != 'paid':
             name = sheet.cell(row=r, column=1).value
+            email = sheet.cell(row=r, column=2).value
     # TODO: メールアカウントにログインする
     # TODO: リマインダーメールを送信する
 
