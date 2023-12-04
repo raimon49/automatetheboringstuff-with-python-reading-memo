@@ -18,6 +18,7 @@ def main():
         if payment != 'paid':
             name = sheet.cell(row=r, column=1).value
             email = sheet.cell(row=r, column=2).value
+            unpaied_members[name] = email
     # TODO: メールアカウントにログインする
     # TODO: リマインダーメールを送信する
 
