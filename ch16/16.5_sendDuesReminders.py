@@ -19,7 +19,7 @@ def main():
             # 支払い済みでない会員の情報を取得
             name = sheet.cell(row=r, column=1).value
             email = sheet.cell(row=r, column=2).value
-            unpaied_members[name] = email
+            unpaied_members[name] = email # 名前をキーにメールアドレスを登録
     # TODO: メールアカウントにログインする
     # TODO: リマインダーメールを送信する
 
