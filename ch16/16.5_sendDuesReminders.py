@@ -16,6 +16,7 @@ def main():
     for r in range(2, sheet.max_row + 1):
         payment = sheet.cell(row=r, column=last_col).value # 'paid' or None
         if payment != 'paid':
+            # 支払い済みでない会員の情報を取得
             name = sheet.cell(row=r, column=1).value
             email = sheet.cell(row=r, column=2).value
             unpaied_members[name] = email
