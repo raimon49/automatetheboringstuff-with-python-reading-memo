@@ -26,6 +26,11 @@ def main():
     smtp_obj.starttls()
     smtp_obj.login('my_email_address@gmail.com', sys.argv[1]) # パスワードは引数で受け取る
     # TODO: リマインダーメールを送信する
+    for name, email in unpaied_members.items():
+        body = """Subject:  {} dues unpaid.
+Dear {},
+Records show that you have not paid dues for {}. Please make this payment as soon as possible. Thank you!
+""".format(last_month, name, last_month)
 
 
 if __name__ == '__main__':
