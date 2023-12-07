@@ -20,7 +20,7 @@ def main():
             name = sheet.cell(row=r, column=1).value
             email = sheet.cell(row=r, column=2).value
             unpaied_members[name] = email # 名前をキーにメールアドレスを登録
-    # TODO: メールアカウントにログインする
+    # メールアカウントにログインする
     smtp_obj = smtplib.SMTP('smtp.gmail.com', 587)
     smtp_obj.ehlo()
     smtp_obj.starttls()
