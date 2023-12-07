@@ -9,7 +9,7 @@ def main():
     sheet = wb['Sheet1']
 
     last_col = sheet.max_column
-    last_month = sheet.cell(row=1, column=last_col).value # 最新月を取得
+    latest_month = sheet.cell(row=1, column=last_col).value # 最新月を取得
 
     # 会員の支払い状況を調べる
     unpaied_members = {}
@@ -30,7 +30,7 @@ def main():
         body = """Subject:  {} dues unpaid.
 Dear {},
 Records show that you have not paid dues for {}. Please make this payment as soon as possible. Thank you!
-""".format(last_month, name, last_month)
+""".format(latest_month, name, latest_month)
 
 
 if __name__ == '__main__':
