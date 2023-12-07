@@ -24,7 +24,7 @@ def main():
     smtp_obj = smtplib.SMTP('smtp.gmail.com', 587)
     smtp_obj.ehlo()
     smtp_obj.starttls()
-    smtp_obj.login('my_email_address@gmail.com', sys.argv[1])
+    smtp_obj.login('my_email_address@gmail.com', sys.argv[1]) # パスワードは引数で受け取る
     # TODO: リマインダーメールを送信する
 
 
