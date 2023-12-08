@@ -13,7 +13,7 @@ def main():
 
     # 会員の支払い状況を調べる
     unpaied_members = {}
-    for r in range(2, sheet.max_row + 1):
+    for r in range(2, sheet.max_row + 1): # 2行目以降をループ
         payment = sheet.cell(row=r, column=last_col).value # 'paid' or None
         if payment != 'paid':
             # 支払い済みでない会員の情報を取得
