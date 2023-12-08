@@ -32,6 +32,9 @@ Dear {},
 Records show that you have not paid dues for {}. Please make this payment as soon as possible. Thank you!
 """.format(latest_month, name, latest_month)
 
+        print('メール送信中 {}...'.format(email))
+        sendmail_status = smtp_obj.sendmail('my_email_address@gmail.com', email, body)
+
 
 if __name__ == '__main__':
     main()
