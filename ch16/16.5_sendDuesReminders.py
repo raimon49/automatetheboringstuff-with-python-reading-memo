@@ -35,6 +35,9 @@ Records show that you have not paid dues for {}. Please make this payment as soo
         print('メール送信中 {}...'.format(email))
         sendmail_status = smtp_obj.sendmail('my_email_address@gmail.com', email, body)
 
+        if sendmail_status != {}:
+            pass # TODO
+
 
 if __name__ == '__main__':
     main()
