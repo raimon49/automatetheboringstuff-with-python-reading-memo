@@ -42,6 +42,8 @@ Records show that you have not paid dues for {}. Please make this payment as soo
                 sendmail_status
             ))
 
+    smtp_obj.quit()
+
 
 if __name__ == '__main__':
     main()
