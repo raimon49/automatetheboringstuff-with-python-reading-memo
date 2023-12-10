@@ -35,6 +35,7 @@ Records show that you have not paid dues for {}. Please make this payment as soo
         print('メール送信中 {}...'.format(email))
         sendmail_status = smtp_obj.sendmail('my_email_address@gmail.com', email, body)
 
+        # SMTPサーバーが送信エラーを応答すると空でない戻り値が返却される
         if sendmail_status != {}:
             print('{}へメール送信中に問題が起こりました: {}'.format(
                 email,
