@@ -42,6 +42,7 @@ Records show that you have not paid dues for {}. Please make this payment as soo
                 sendmail_status
             ))
 
+    # メールサーバーとの接続を切る
     smtp_obj.quit()
 
 
