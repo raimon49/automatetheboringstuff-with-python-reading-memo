@@ -25,7 +25,7 @@ def main():
     smtp_obj.ehlo()
     smtp_obj.starttls()
     smtp_obj.login('my_email_address@gmail.com', sys.argv[1]) # パスワードは引数で受け取る
-    # TODO: リマインダーメールを送信する
+    # リマインダーメールを送信する
     for name, email in unpaied_members.items():
         body = """Subject:  {} dues unpaid.
 Dear {},
