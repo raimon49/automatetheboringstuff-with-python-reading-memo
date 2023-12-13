@@ -10,6 +10,9 @@ def main():
     auth_token = 'xxxxxxxxxxxxxx'
     twilio_cli = Client(account_SID, auth_token)
 
+    my_twilio_number = '+12345678901'
+    my_cell_phone = '+819012345678'
+
 
 if __name__ == '__main__':
     main()
