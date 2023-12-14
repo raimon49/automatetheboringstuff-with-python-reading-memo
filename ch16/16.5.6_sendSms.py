@@ -18,6 +18,9 @@ def main():
         to=my_cell_phone        # 宛先となる携帯電話番号
     )
 
+    # 作成されたmessageオブジェクトを確認
+    print(message.status)
+
 
 if __name__ == '__main__':
     main()
