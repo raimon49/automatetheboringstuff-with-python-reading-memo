@@ -19,7 +19,7 @@ def main():
     )
 
     # 作成されたmessageオブジェクトを確認
-    print(message.status)
+    print(message.status) # 'queued'
 
 
 if __name__ == '__main__':
