@@ -13,9 +13,9 @@ def main():
     my_twilio_number = '+12345678901'
     my_cell_phone = '+819012345678'
     message = twilio_cli.messages.create(
-        body='Come on',
-        from_=my_twilio_number,
-        to=my_cell_phone
+        body='Come on',         # メッセージ本文
+        from_=my_twilio_number, # 米国キャリアの携帯電話番号
+        to=my_cell_phone        # 宛先となる携帯電話番号
     )
 
 
