@@ -21,6 +21,7 @@ def main():
     # 作成されたmessageオブジェクトを確認
     print(message.to)     # '+12345678901'
     print(message.from_)  # '+819012345678'
+    print(message.body)
     print(message.status) # 'queued'
 
 
