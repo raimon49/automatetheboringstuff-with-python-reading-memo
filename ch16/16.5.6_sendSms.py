@@ -23,6 +23,7 @@ def main():
     print(message.from_)  # '+819012345678'
     print(message.body)   # 'Come on'
     print(message.status) # 'queued'
+    print(message.sid)
 
 
 if __name__ == '__main__':
