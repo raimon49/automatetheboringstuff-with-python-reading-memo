@@ -25,7 +25,7 @@ def main():
     print(message.status) # 'queued'
     print(message.sid)    # 'SM09520de7639ba3af137c6fcb7c5f4b51'
 
-    updated_message = twilio_cli.messages.get(message.sid)
+    updated_message = twilio_cli.messages.get(message.sid) # 最新情報を取得
 
 
 if __name__ == '__main__':
