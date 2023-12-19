@@ -28,6 +28,7 @@ def main():
     # 最新情報のmessageオブジェクトを取得
     updated_message = twilio_cli.messages.get(message.sid)
     print(updated_message.status)
+    print(updated_message.date_sent)
 
 
 if __name__ == '__main__':
