@@ -27,7 +27,7 @@ def main():
 
     # 最新情報のmessageオブジェクトを取得
     updated_message = twilio_cli.messages.get(message.sid)
-    print(updated_message.status)    # 'sending' or 'delivered'
+    print(updated_message.status)    # 'sending' or 'sent' or 'delivered'
     print(updated_message.date_sent) # datetime.datetime(2015, 7, 8, 1, 36, 18)
 
 
