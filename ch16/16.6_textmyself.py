@@ -18,7 +18,7 @@ def textmyself(message):
     )
 
 def main():
-    pass
+    textmyself('退屈な作業が終わったよ')
 
 
 if __name__ == '__main__':
