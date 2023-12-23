@@ -4,6 +4,8 @@
 from twilio.rest import Client
 
 
+# 他のプログラムからtextmyself()関数を使いたいときは、このファイルを
+# ユーザー用site-packagesディレクトリに設置する
 def textmyself(message):
     account_SID = 'ACxxxxxxxxxxx'
     auth_token = 'xxxxxxxxxxxxxx'
