@@ -6,6 +6,8 @@ from twilio.rest import Client
 
 # 他のプログラムからtextmyself()関数を使いたいときは、このファイルを
 # ユーザー用site-packagesディレクトリに設置する
+# ex) macOS: ~/Library/Python/X.Y/lib/site-packages
+# ex) Linux: ~/.local/lib/python.X.Y/site-packages
 def textmyself(message):
     account_SID = 'ACxxxxxxxxxxx'
     auth_token = 'xxxxxxxxxxxxxx'
