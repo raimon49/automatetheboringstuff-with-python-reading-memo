@@ -8,6 +8,7 @@ from twilio.rest import Client
 # ユーザー用site-packagesディレクトリに設置する
 # ex) macOS: ~/Library/Python/X.Y/lib/site-packages
 # ex) Linux: ~/.local/lib/python.X.Y/site-packages
+# import textmyself
 def textmyself(message):
     account_SID = 'ACxxxxxxxxxxx'
     auth_token = 'xxxxxxxxxxxxxx'
