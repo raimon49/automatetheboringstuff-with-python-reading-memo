@@ -11,6 +11,7 @@ from twilio.rest import Client
 # import textmyself
 # textmyself.textmyself('退屈な作業が終わったよ')
 #
+# 正確なディレクトリ位置はsiteパッケージで確認可能
 # import site
 # print(site.USER_SITE)
 def textmyself(message):
