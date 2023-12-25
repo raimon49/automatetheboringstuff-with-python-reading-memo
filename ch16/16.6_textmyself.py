@@ -10,6 +10,9 @@ from twilio.rest import Client
 # ex) Linux: ~/.local/lib/python.X.Y/site-packages
 # import textmyself
 # textmyself.textmyself('退屈な作業が終わったよ')
+#
+# import site
+# print(site.USER_SITE)
 def textmyself(message):
     account_SID = 'ACxxxxxxxxxxx'
     auth_token = 'xxxxxxxxxxxxxx'
