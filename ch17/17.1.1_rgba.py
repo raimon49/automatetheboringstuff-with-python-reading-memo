@@ -5,7 +5,7 @@
 def main():
     from PIL import ImageColor
 
-    print(ImageColor.getcolor('red', 'RGBA'))
+    print(ImageColor.getcolor('red', 'RGBA')) # (255, 0, 0, 255)
 
 
 if __name__ == '__main__':
