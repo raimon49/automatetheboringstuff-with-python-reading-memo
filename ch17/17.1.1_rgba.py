@@ -7,6 +7,7 @@ def main():
 
     print(ImageColor.getcolor('red', 'RGBA')) # (255, 0, 0, 255)
     print(ImageColor.getcolor('RED', 'RGBA')) # (255, 0, 0, 255)
+    print(ImageColor.getcolor('Black', 'RGBA'))
 
 
 if __name__ == '__main__':
