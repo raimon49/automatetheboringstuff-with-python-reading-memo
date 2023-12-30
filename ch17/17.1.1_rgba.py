@@ -5,6 +5,7 @@
 def main():
     from PIL import ImageColor
 
+    # 'red'と'RED'は同じRGBAタプルを返す
     print(ImageColor.getcolor('red', 'RGBA'))            # (255, 0, 0, 255)
     print(ImageColor.getcolor('RED', 'RGBA'))            # (255, 0, 0, 255)
     print(ImageColor.getcolor('Black', 'RGBA'))          # (0, 0, 0, 255)
