@@ -8,7 +8,7 @@ def main():
     cat_im = Image.open('zophie.png')
     print(cat_im) # <PIL.PngImagePlugin.PngImageFile image mode=RGB size=816x1088 at 0x7F130DE79E50>
 
-    print(cat_im.size)
+    print(cat_im.size) # (816, 1088)
 
 
 if __name__ == '__main__':
