@@ -9,9 +9,10 @@ def main():
     print(cat_im) # <PIL.PngImagePlugin.PngImageFile image mode=RGB size=816x1088 at 0x7F130DE79E50>
 
     print(cat_im.size) # (816, 1088)
+
     width, height = cat_im.size
-    print(width)
-    print(height)
+    print(width)  # 816
+    print(height) # 1088
 
 
 if __name__ == '__main__':
