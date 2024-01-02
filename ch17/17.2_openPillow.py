@@ -10,6 +10,8 @@ def main():
 
     print(cat_im.size) # (816, 1088)
     width, height = cat_im.size
+    print(width)
+    print(height)
 
 
 if __name__ == '__main__':
