@@ -14,7 +14,7 @@ def main():
     print(width)  # 816
     print(height) # 1088
 
-    print(cat_im.filename)
+    print(cat_im.filename) # zophie.png
 
 
 if __name__ == '__main__':
