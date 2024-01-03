@@ -16,6 +16,8 @@ def main():
 
     print(cat_im.filename) # zophie.png
 
+    print(cat_im.format)
+
 
 if __name__ == '__main__':
     main()
