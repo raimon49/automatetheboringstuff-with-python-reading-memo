@@ -14,6 +14,8 @@ def main():
     print(width)  # 816
     print(height) # 1088
 
+    print(cat_im.filename)
+
 
 if __name__ == '__main__':
     main()
