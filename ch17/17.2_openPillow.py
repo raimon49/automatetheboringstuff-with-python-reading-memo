@@ -20,6 +20,9 @@ def main():
 
     print(cat_im.format_description) # Portable network graphics
 
+    # JPEGフォーマットで保存
+    # cat_im.save('zophie.jpg')
+
 
 if __name__ == '__main__':
     main()
