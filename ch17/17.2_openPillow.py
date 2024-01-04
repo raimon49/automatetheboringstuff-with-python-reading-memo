@@ -18,7 +18,7 @@ def main():
 
     print(cat_im.format) # PNG
 
-    print(cat_im.format_description)
+    print(cat_im.format_description) # Portable network graphics
 
 
 if __name__ == '__main__':
