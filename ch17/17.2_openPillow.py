@@ -18,6 +18,8 @@ def main():
 
     print(cat_im.format) # PNG
 
+    print(cat_im.format_description)
+
 
 if __name__ == '__main__':
     main()
