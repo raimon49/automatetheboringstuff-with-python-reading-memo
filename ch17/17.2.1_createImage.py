@@ -8,6 +8,9 @@ def main():
     im = Image.new('RGBA', (100, 200), 'purple')
     im.save('purpleImage.png')
 
+    im2 = Image.new('RGBA', (20, 20))
+    im2.save('transparentImage.png')
+
 
 if __name__ == '__main__':
     main()
