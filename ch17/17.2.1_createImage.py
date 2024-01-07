@@ -9,6 +9,7 @@ def main():
     im = Image.new('RGBA', (100, 200), 'purple')
     im.save('purpleImage.png')
 
+    # 幅20x高さ20で紫の背景色を持たない画像を生成
     im2 = Image.new('RGBA', (20, 20))
     im2.save('transparentImage.png')
 
