@@ -5,6 +5,7 @@
 def main():
     from PIL import Image
 
+    # 幅100x高さ100で紫の背景色を持つ画像を生成
     im = Image.new('RGBA', (100, 200), 'purple')
     im.save('purpleImage.png')
 
