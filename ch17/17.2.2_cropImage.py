@@ -6,6 +6,8 @@ def main():
     from PIL import Image
 
     cat_im = Image.open('zophie.png')
+
+    # 猫画像の顔部分矩形を指定して切り抜く
     cropped_im = cat_im.crop((335, 345, 565, 560))
     cropped_im.save('cropped.png')
 
