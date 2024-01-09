@@ -7,7 +7,7 @@ def main():
 
     cat_im = Image.open('zophie.png')
 
-    # 猫画像の顔部分矩形を指定して切り抜く
+    # 猫画像の顔部分矩形を指定して切り抜く（矩形タプルの左上の点は含まれるが右下の点は切り抜き領域に含まれない）
     cropped_im = cat_im.crop((335, 345, 565, 560))
     # 新しい画像ファイルとして保存
     cropped_im.save('cropped.png')
