@@ -10,7 +10,7 @@ def main():
 
     # 猫画像の顔部分矩形を指定して切り抜く（矩形タプルの左上の点は含まれるが右下の点は切り抜き領域に含まれない）
     face_im = cat_im.crop((335, 345, 565, 560))
-    print(face_im.size)
+    print(face_im.size) # (230, 215)
 
 if __name__ == '__main__':
     main()
