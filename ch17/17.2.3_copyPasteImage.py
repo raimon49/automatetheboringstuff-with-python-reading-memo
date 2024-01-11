@@ -14,6 +14,7 @@ def main():
 
     cat_copy_im.paste(face_im, (0, 0))
     cat_copy_im.paste(face_im, (400, 500))
+    cat_copy_im.save('pasted.png')
 
 if __name__ == '__main__':
     main()
