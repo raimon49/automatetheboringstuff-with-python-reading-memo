@@ -12,8 +12,8 @@ def main():
     face_im = cat_im.crop((335, 345, 565, 560))
     print(face_im.size) # (230, 215)
 
-    cat_copy_im.paste(face_im, (0, 0))
-    cat_copy_im.paste(face_im, (400, 500))
+    cat_copy_im.paste(face_im, (0, 0))     # 左上の原点座標に貼り付け
+    cat_copy_im.paste(face_im, (400, 500)) # X座標400, Y座標500に貼り付け
     cat_copy_im.save('pasted.png')
 
 if __name__ == '__main__':
