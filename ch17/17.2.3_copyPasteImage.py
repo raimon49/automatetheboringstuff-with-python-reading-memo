@@ -14,7 +14,7 @@ def main():
 
     cat_copy_im.paste(face_im, (0, 0))     # 左上の原点座標に貼り付け
     cat_copy_im.paste(face_im, (400, 500)) # X座標400, Y座標500に貼り付け
-    cat_copy_im.save('pasted.png')
+    cat_copy_im.save('pasted.png')         # 貼り付けた画像を別名称で保存
 
 if __name__ == '__main__':
     main()
