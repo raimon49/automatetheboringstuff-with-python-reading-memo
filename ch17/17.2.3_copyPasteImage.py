@@ -17,6 +17,8 @@ def main():
     cat_copy_im.save('pasted.png')         # 貼り付けた画像を別名称で保存
 
     cat_im_width, cat_im_height = cat_im.size
+    face_im_width, face_im_height = face_im.size
+    cat_copy_two = cat_im.copy()
 
 if __name__ == '__main__':
     main()
