@@ -19,6 +19,9 @@ def main():
     cat_im_width, cat_im_height = cat_im.size
     face_im_width, face_im_height = face_im.size
     cat_copy_two = cat_im.copy()
+    for left in range(0, cat_im_height, face_im_height):
+        for top in range(0, cat_im_height, face_im_height):
+            print(left, top)
 
 if __name__ == '__main__':
     main()
