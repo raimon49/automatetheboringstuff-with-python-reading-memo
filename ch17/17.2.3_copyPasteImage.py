@@ -21,6 +21,30 @@ def main():
     cat_copy_two = cat_im.copy()
     for left in range(0, cat_im_width, face_im_width):
         for top in range(0, cat_im_height, face_im_height):
+            # 0 0
+            # 0 215
+            # 0 430
+            # 0 645
+            # 0 860
+            # 0 1075
+            # 230 0
+            # 230 215
+            # 230 430
+            # 230 645
+            # 230 860
+            # 230 1075
+            # 460 0
+            # 460 215
+            # 460 430
+            # 460 645
+            # 460 860
+            # 460 1075
+            # 690 0
+            # 690 215
+            # 690 430
+            # 690 645
+            # 690 860
+            # 690 1075
             print(left, top)
 
 if __name__ == '__main__':
