@@ -46,6 +46,7 @@ def main():
             # 690 860
             # 690 1075
             print(left, top)
+            cat_copy_two.paste(face_im, (left, top))
 
 if __name__ == '__main__':
     main()
