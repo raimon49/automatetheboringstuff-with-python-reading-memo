@@ -48,5 +48,7 @@ def main():
             print(left, top)
             cat_copy_two.paste(face_im, (left, top))
 
+    cat_copy_two.save('tiled.png')
+
 if __name__ == '__main__':
     main()
