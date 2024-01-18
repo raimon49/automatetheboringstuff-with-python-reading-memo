@@ -46,6 +46,7 @@ def main():
             # 690 860
             # 690 1075
             print(left, top)
+            # 猫の顔領域を順に貼り付けて埋め尽くす
             cat_copy_two.paste(face_im, (left, top))
 
     cat_copy_two.save('tiled.png')
