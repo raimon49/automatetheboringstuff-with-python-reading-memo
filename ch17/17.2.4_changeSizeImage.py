@@ -10,6 +10,7 @@ def main():
 
     quartersized_im = cat_im.resize((int(width / 2), int(height /2)))
     quartersized_im.save('quartersized.png')
+    svelte_im = cat_im.resize((width, height + 300))
 
 if __name__ == '__main__':
     main()
