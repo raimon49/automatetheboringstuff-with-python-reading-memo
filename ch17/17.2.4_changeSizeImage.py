@@ -15,6 +15,8 @@ def main():
 
     thumb_im = cat_im.copy()
     print(thumb_im.size) # (816, 1088)
+    thumb_im.thumbnail((100, 100))
+    print(thumb_im.size) # (75, 100)
 
 if __name__ == '__main__':
     main()
