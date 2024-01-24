@@ -13,5 +13,8 @@ def main():
     svelte_im = cat_im.resize((width, height + 300))                  # 縦長の画像にリサイズ
     svelte_im.save('svelte.png')
 
+    thumb_im = cat_im.copy()
+    print(thumb_im.size) # (816, 1088)
+
 if __name__ == '__main__':
     main()
