@@ -17,6 +17,7 @@ def main():
     print(thumb_im.size) # (816, 1088)
     thumb_im.thumbnail((100, 100))
     print(thumb_im.size) # (75, 100)
+    thumb_im.save('thumbnail.jpg')
 
 if __name__ == '__main__':
     main()
