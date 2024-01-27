@@ -8,6 +8,8 @@ def main():
     cat_im = Image.open('zophie.png')
 
     cat_im.rotate(90).save('rotated90.png')
+    cat_im.rotate(180).save('rotated180.png')
+    cat_im.rotate(270).save('rotated270.png')
 
 if __name__ == '__main__':
     main()
