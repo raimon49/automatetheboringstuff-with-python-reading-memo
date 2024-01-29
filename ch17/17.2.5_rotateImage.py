@@ -11,5 +11,8 @@ def main():
     cat_im.rotate(180).save('rotated180.png') # 上下反転
     cat_im.rotate(270).save('rotated270.png') # 反時計回りに270度回転
 
+    cat_im.rotate(6).save('rotated6.png')
+    cat_im.rotate(6, expand=True).save('rotated6_expanded.png')
+
 if __name__ == '__main__':
     main()
