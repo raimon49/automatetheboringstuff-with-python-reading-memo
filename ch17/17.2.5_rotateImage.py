@@ -14,7 +14,7 @@ def main():
     cat_im.rotate(6).save('rotated6.png')                       # 回転で見切れた部分は切り取られる
     cat_im.rotate(6, expand=True).save('rotated6_expanded.png') # 回転部分が画像内に収まるよう拡大
 
-    cat_im.transpose(Image.FLIP_LEFT_RIGHT).save('horizontal_flip.png')
+    cat_im.transpose(Image.FLIP_LEFT_RIGHT).save('horizontal_flip.png') # 水平方向に反転
     cat_im.transpose(Image.FLIP_TOP_BOTTOM).save('vertical_flip.png')
 
 if __name__ == '__main__':
