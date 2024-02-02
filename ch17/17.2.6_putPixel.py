@@ -6,7 +6,7 @@ def main():
     from PIL import Image
 
     im = Image.new('RGBA', (100, 100))
-    print(im.getpixel((0, 0)))
+    print(im.getpixel((0, 0))) # (0, 0, 0, 0)
 
 if __name__ == '__main__':
     main()
