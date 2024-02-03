@@ -8,5 +8,9 @@ def main():
     im = Image.new('RGBA', (100, 100))
     print(im.getpixel((0, 0))) # (0, 0, 0, 0)
 
+    for y in range(50):
+        for x in range(100):
+            im.putpixel((x, y), (210, 210, 210))
+
 if __name__ == '__main__':
     main()
