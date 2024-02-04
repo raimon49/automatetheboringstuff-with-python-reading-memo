@@ -17,5 +17,7 @@ def main():
         for x in range(100):
             im.putpixel((x, y), darkgray)
 
+    print(im.getpixel((0, 0)))
+
 if __name__ == '__main__':
     main()
