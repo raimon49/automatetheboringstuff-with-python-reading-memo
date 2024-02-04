@@ -13,6 +13,9 @@ def main():
             im.putpixel((x, y), (210, 210, 210))
 
     darkgray = ImageColor.getcolor('darkgray', 'RGBA')
+    for y in range(50):
+        for x in range(100):
+            im.putpixel((x, y), darkgray)
 
 if __name__ == '__main__':
     main()
