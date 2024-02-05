@@ -13,11 +13,11 @@ def main():
             im.putpixel((x, y), (210, 210, 210))
 
     darkgray = ImageColor.getcolor('darkgray', 'RGBA')
-    for y in range(50):
+    for y in range(50, 100):
         for x in range(100):
             im.putpixel((x, y), darkgray)
 
-    print(im.getpixel((0, 0)))
+    print(im.getpixel((0, 0))) # (169, 169, 169, 255)
 
 if __name__ == '__main__':
     main()
