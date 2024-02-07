@@ -20,5 +20,7 @@ def main():
     print(im.getpixel((0, 0)))  # (210, 210, 210, 255)
     print(im.getpixel((0, 50))) # (169, 169, 169, 255)
 
+    im.save('putPixel.png')
+
 if __name__ == '__main__':
     main()
