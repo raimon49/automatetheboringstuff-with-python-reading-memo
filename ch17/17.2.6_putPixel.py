@@ -10,6 +10,7 @@ def main():
 
     for y in range(50):
         for x in range(100):
+            # 100x100ピクセル画像の上半分を灰色に
             im.putpixel((x, y), (210, 210, 210))
 
     darkgray = ImageColor.getcolor('darkgray', 'RGBA')
