@@ -13,6 +13,12 @@ def main():
     logo_width, logo_height = logo_im.size
 
     # TODO: カレントディレクトリの全画像をループする
+    os.makedirs('whithLogo', exist_ok=True)
+
+    for filename in os.listdir('.'):
+        if not (filename.endswith('.png') or filename.endswith('.jpg')) \
+                or filename == LOGO_FILENAME:
+            continue
 
     # TODO: 画像をサイズ変更する
 
