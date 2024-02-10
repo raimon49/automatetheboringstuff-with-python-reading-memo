@@ -12,5 +12,13 @@ def main():
     logo_im = Image.open(LOGO_FILENAME)
     logo_width, logo_height = logo_im.size
 
+    # TODO: カレントディレクトリの全画像をループする
+
+    # TODO: 画像をサイズ変更する
+
+    # TODO: ロゴを追加する
+
+    # TODO: 変更を保存する
+
 if __name__ == '__main__':
     main()
