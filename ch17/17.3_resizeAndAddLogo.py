@@ -16,6 +16,7 @@ def main():
     os.makedirs('whithLogo', exist_ok=True)
 
     for filename in os.listdir('.'):
+        # 画像以外のファイル・ロゴファイルはスキップ
         if not (filename.endswith('.png') or filename.endswith('.jpg')) \
                 or filename == LOGO_FILENAME:
             continue
