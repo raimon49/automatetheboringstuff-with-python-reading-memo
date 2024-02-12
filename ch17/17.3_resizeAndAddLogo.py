@@ -21,6 +21,8 @@ def main():
                 or filename == LOGO_FILENAME:
             continue
 
+        im = Image.open(filename)
+
     # TODO: 画像をサイズ変更する
 
     # TODO: ロゴを追加する
