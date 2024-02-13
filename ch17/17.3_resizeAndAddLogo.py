@@ -24,7 +24,7 @@ def main():
         im = Image.open(filename)
 
     # TODO: 画像をサイズ変更する
-
+        im.thumbnail((SQUARE_FIT_SIZE, SQUARE_FIT_SIZE))
     # TODO: ロゴを追加する
 
     # TODO: 変更を保存する
