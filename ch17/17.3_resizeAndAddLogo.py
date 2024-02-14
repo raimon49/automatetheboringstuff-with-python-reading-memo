@@ -23,12 +23,13 @@ def main():
 
         im = Image.open(filename).copy()
 
-    # TODO: 画像をサイズ変更する
+        # TODO: 画像をサイズ変更する
         im.thumbnail((SQUARE_FIT_SIZE, SQUARE_FIT_SIZE))
         width, height = im.size
-    # TODO: ロゴを追加する
 
-    # TODO: 変更を保存する
+        # TODO: ロゴを追加する
+
+        # TODO: 変更を保存する
 
 if __name__ == '__main__':
     main()
