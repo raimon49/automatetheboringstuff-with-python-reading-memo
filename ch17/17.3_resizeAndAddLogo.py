@@ -21,7 +21,7 @@ def main():
                 or filename == LOGO_FILENAME:
             continue
 
-        im = Image.open(filename)
+        im = Image.open(filename).copy()
 
     # TODO: 画像をサイズ変更する
         im.thumbnail((SQUARE_FIT_SIZE, SQUARE_FIT_SIZE))
