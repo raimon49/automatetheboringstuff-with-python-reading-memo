@@ -28,6 +28,10 @@ def main():
         width, height = im.size
 
         # TODO: ロゴを追加する
+        print('ロゴを追加中 {}...'.format(filename))
+        im.paste(logo_im,
+                 (width - logo_width, height - logo_height),
+                 logo_im)
 
         # TODO: 変更を保存する
 
