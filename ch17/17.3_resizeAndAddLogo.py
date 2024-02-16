@@ -23,7 +23,7 @@ def main():
 
         im = Image.open(filename).copy()
 
-        # TODO: 画像をサイズ変更する
+        # 画像をサイズ変更する
         im.thumbnail((SQUARE_FIT_SIZE, SQUARE_FIT_SIZE))
         width, height = im.size
 
