@@ -12,7 +12,7 @@ def main():
     logo_im = Image.open(LOGO_FILENAME)
     logo_width, logo_height = logo_im.size
 
-    # TODO: カレントディレクトリの全画像をループする
+    # カレントディレクトリの全画像をループする
     os.makedirs('whithLogo', exist_ok=True)
 
     for filename in os.listdir('.'):
