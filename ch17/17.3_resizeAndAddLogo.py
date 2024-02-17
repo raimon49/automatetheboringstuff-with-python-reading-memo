@@ -29,9 +29,10 @@ def main():
 
         # TODO: ロゴを追加する
         print('ロゴを追加中 {}...'.format(filename))
+        # 右下にロゴを貼り付けるためロゴ画像の分だけ引いた座標を指定
         im.paste(logo_im,
                  (width - logo_width, height - logo_height),
-                 logo_im)
+                 logo_im) # 第3引数にもlogo_imを渡すことで背景を透過で貼り付ける
 
         # TODO: 変更を保存する
         im.save(os.path.join('withLogo', filename))
