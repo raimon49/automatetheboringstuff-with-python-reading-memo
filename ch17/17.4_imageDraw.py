@@ -9,6 +9,7 @@ def main():
     draw = ImageDraw.Draw(im)
 
     draw.line([(0, 0), (199, 0), (199, 199), (0, 199), (0, 0)], fill='black')
+    draw.rectangle((20, 30, 60, 60), fill='blue')
 
 if __name__ == '__main__':
     main()
