@@ -8,7 +8,7 @@ def main():
     im = Image.new('RGBA', (200, 200), 'white')
     draw = ImageDraw.Draw(im)
 
-    draw.line([(0, 0), (199, 0), (199, 199), (0, 199), (0, 0)])
+    draw.line([(0, 0), (199, 0), (199, 199), (0, 199), (0, 0)], fill='black')
 
 if __name__ == '__main__':
     main()
