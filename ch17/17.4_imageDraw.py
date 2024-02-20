@@ -10,6 +10,7 @@ def main():
 
     draw.line([(0, 0), (199, 0), (199, 199), (0, 199), (0, 0)], fill='black')
     draw.rectangle((20, 30, 60, 60), fill='blue')
+    draw.ellipse((120, 30, 160, 60), fill='red')
 
 if __name__ == '__main__':
     main()
