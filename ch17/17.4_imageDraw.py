@@ -15,5 +15,7 @@ def main():
     for i in range(100, 200, 10):
         draw.line([(i, 0), (200, i - 100)], fill='green')
 
+    im.save('drawing.png')
+
 if __name__ == '__main__':
     main()
