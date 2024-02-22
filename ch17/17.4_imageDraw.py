@@ -8,6 +8,7 @@ def main():
     im = Image.new('RGBA', (200, 200), 'white')
     draw = ImageDraw.Draw(im)
 
+    # 線分の描画
     draw.line([(0, 0), (199, 0), (199, 199), (0, 199), (0, 0)], fill='black')
     draw.rectangle((20, 30, 60, 60), fill='blue')
     draw.ellipse((120, 30, 160, 60), fill='red')
