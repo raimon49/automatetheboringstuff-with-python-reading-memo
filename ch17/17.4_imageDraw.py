@@ -10,6 +10,7 @@ def main():
 
     # 線分の描画
     draw.line([(0, 0), (199, 0), (199, 199), (0, 199), (0, 0)], fill='black')
+    # 矩形の描画
     draw.rectangle((20, 30, 60, 60), fill='blue')
     draw.ellipse((120, 30, 160, 60), fill='red')
     draw.polygon(((57, 87), (79, 62), (94, 85), (120, 90), (103, 113)), fill='brown')
