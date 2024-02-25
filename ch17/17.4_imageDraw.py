@@ -24,8 +24,8 @@ def main():
 
     im = Image.new('RGBA', (200, 200), 'white')
     draw = ImageDraw.Draw(im)
-    arial_font = ImageFont.truetype('DejaVuSansMono.ttf', 32)
-    draw.text((100, 150), 'Howdy', fill='gray', font=arial_font)
+    dejavu_font = ImageFont.truetype('DejaVuSansMono.ttf', 32)
+    draw.text((100, 150), 'Howdy', fill='gray', font=dejavu_font)
 
 if __name__ == '__main__':
     main()
