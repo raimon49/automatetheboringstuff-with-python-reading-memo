@@ -22,5 +22,9 @@ def main():
 
     im.save('drawing.png')
 
+    im = Image.new('RGBA', (200, 200), 'white')
+    draw = ImageDraw.Draw(im)
+    arial_font = ImageFont.truetype('DejaVuSansMono.ttf', 32)
+
 if __name__ == '__main__':
     main()
