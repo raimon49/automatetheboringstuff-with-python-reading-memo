@@ -17,6 +17,7 @@ def main():
     # 5点から構成される多角形の描画
     draw.polygon(((57, 87), (79, 62), (94, 85), (120, 90), (103, 113)), fill='brown')
     for i in range(100, 200, 10):
+        # 線のパターンを描画
         draw.line([(i, 0), (200, i - 100)], fill='green')
 
     im.save('drawing.png')
