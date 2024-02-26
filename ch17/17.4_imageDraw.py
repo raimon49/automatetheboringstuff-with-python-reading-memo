@@ -27,5 +27,7 @@ def main():
     dejavu_font = ImageFont.truetype('DejaVuSansMono.ttf', 32)
     draw.text((100, 150), 'Howdy', fill='gray', font=dejavu_font)
 
+    im.save('text.png')
+
 if __name__ == '__main__':
     main()
