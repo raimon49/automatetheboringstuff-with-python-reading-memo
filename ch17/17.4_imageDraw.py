@@ -24,7 +24,9 @@ def main():
 
     im = Image.new('RGBA', (200, 200), 'white')
     draw = ImageDraw.Draw(im)
+    # Ubuntuに入ってるフォントの読み込み
     dejavu_font = ImageFont.truetype('DejaVuSansMono.ttf', 32)
+    # text()の引数にフォントを指定してテキスト描画
     draw.text((100, 150), 'Howdy', fill='gray', font=dejavu_font)
 
     im.save('text.png')
