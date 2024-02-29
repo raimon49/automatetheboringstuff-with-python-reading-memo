@@ -34,6 +34,8 @@ def main():
     #   Linux:
     #     /usr/share/fonts/truetype
     dejavu_font = ImageFont.truetype('DejaVuSansMono.ttf', 32)
+
+    japanese_font = ImageFont.truetype('meiryo.ttc', 24, index=0)
     # text()の引数にフォントを指定してテキスト描画
     draw.text((100, 150), 'Howdy', fill='gray', font=dejavu_font)
 
