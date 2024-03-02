@@ -5,8 +5,9 @@
 def main():
     import pyautogui
 
-    # 解像度をタプルで出力
+    # 隗｣蜒丞ｺｦ繧偵ち繝励Ν縺ｧ蜿門ｾ励＠蜃ｺ蜉帙�ｻ螟画焚縺ｫ莉｣蜈･
     print(pyautogui.size())
+    width, height = pyautogui.size()
 
 
 if __name__ == '__main__':
