@@ -23,5 +23,7 @@ def main():
         pyautogui.moveRel(-100, 0, duration=0.25)
         pyautogui.moveRel(0, -100, duration=0.25)
 
+    print(pyautogui.size()) # (311, 622)
+
 if __name__ == '__main__':
     main()
