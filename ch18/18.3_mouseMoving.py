@@ -26,5 +26,8 @@ def main():
     # マウスの座標をタプルで取得
     print(pyautogui.position()) # (311, 622)
 
+    while True:
+        x, y = pyautogui.position()
+
 if __name__ == '__main__':
     main()
