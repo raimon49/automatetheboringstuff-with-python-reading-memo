@@ -24,7 +24,7 @@ def main():
         pyautogui.moveRel(0, -100, duration=0.25)
 
     # マウスの座標をタプルで取得
-    print(pyautogui.size()) # (311, 622)
+    print(pyautogui.position()) # (311, 622)
 
 if __name__ == '__main__':
     main()
