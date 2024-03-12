@@ -28,6 +28,7 @@ def main():
 
     while True:
         x, y = pyautogui.position()
+        position_str = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
 
 if __name__ == '__main__':
     main()
