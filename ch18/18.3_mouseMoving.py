@@ -26,6 +26,7 @@ def main():
     # マウスの座標をタプルで取得
     print(pyautogui.position()) # (311, 622)
 
+    # マウス座標を取得して表示し続ける
     while True:
         x, y = pyautogui.position()
         position_str = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
