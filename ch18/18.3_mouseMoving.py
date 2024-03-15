@@ -31,7 +31,7 @@ def main():
         x, y = pyautogui.position()
         position_str = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
         print(position, end='')
-        print('\b' * len(position_str), end='', flush=True)
+        print('\b' * len(position_str), end='', flush=True) # バックスペース文字の出力時はflush=Trueにしないと正しく表示されない
 
 if __name__ == '__main__':
     main()
