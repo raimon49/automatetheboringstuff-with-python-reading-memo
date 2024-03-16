@@ -33,6 +33,7 @@ def main():
         print(position, end='')
         print('\b' * len(position_str), end='', flush=True) # バックスペース文字の出力時はflush=Trueにしないと正しく表示されない
 
+    # 画面座標の左上をクリックさせる
     pyautogui.click(10, 5)
 
 if __name__ == '__main__':
