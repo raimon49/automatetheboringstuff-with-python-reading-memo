@@ -35,6 +35,8 @@ def main():
 
     # 画面座標の左上をクリックさせる
     pyautogui.click(10, 5)
+    pyautogui.rightClick(10, 5)  # 右ボタンをクリック
+    pyautogui.middleClick(10, 5) # 中央ボタンをクリック
 
 if __name__ == '__main__':
     main()
