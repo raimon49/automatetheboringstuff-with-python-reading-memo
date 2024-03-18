@@ -38,5 +38,10 @@ def main():
     pyautogui.rightClick(10, 5)  # 右ボタンをクリック
     pyautogui.middleClick(10, 5) # 中央ボタンをクリック
 
+    distance = 200
+    while distance > 0:
+        pyautogui.dragRel(distance, 0, duration=0.2)
+        distance = distance - 5
+
 if __name__ == '__main__':
     main()
