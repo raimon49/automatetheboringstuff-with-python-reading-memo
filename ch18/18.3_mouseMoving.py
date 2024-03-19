@@ -38,6 +38,7 @@ def main():
     pyautogui.rightClick(10, 5)  # 右ボタンをクリック
     pyautogui.middleClick(10, 5) # 中央ボタンをクリック
 
+    # クリック位置から相対的にマウス位置を移動させる
     distance = 200
     while distance > 0:
         pyautogui.dragRel(distance, 0, duration=0.2)  # 右へ移動
