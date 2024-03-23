@@ -40,7 +40,7 @@ def main():
 
     # クリック位置から相対的にマウス位置を移動させる
     distance = 200
-    while distance > 0:
+    while distance > 0: # 四角形の渦巻き状にドラッグするループ
         pyautogui.dragRel(distance, 0, duration=0.2)  # 右へ移動
         distance = distance - 5
         pyautogui.dragRel(0, distance, duration=0.2)  # 下へ移動
