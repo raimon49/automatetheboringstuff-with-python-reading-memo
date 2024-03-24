@@ -48,6 +48,7 @@ def main():
         distance = distance - 5
         pyautogui.dragRel(0, -distance, duration=0.2) # 上へ移動
 
+    # マウスホイールをスクロール
     pyautogui.scroll(200)
 
 if __name__ == '__main__':
