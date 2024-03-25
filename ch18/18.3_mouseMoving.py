@@ -55,7 +55,7 @@ def main():
     for i in range(200):
         numbers = numbers + str(i) + '\n'
 
-    pyperclip.copy(numbers)
+    pyperclip.copy(numbers) # 200までの数字を改行で繋げてクリップボードにコピー
 
 if __name__ == '__main__':
     main()
