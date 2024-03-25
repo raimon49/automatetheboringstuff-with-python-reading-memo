@@ -3,7 +3,7 @@
 # vim:fenc=utf-8 ff=unix ft=python ts=4 sw=4 sts=4 si et
 
 def main():
-    import pyautogui
+    import pyautogui, pyperclip
 
     # 解像度をタプルで取得し出力・変数に代入
     print(pyautogui.size())
@@ -50,6 +50,12 @@ def main():
 
     # マウスホイールをスクロール
     pyautogui.scroll(200)
+
+    numbers = ''
+    for i in range(200):
+        numbers = numbers + str(i) + '\n'
+
+    pyperclip.copy(numbers)
 
 if __name__ == '__main__':
     main()
