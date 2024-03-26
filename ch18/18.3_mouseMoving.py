@@ -57,6 +57,7 @@ def main():
 
     pyperclip.copy(numbers) # 200までの数字を改行で繋げてクリップボードにコピー
 
+    # スクリーンショットを取得（Imageオブジェクトで返される）
     im = pyautogui.screenshot()
 
 if __name__ == '__main__':
