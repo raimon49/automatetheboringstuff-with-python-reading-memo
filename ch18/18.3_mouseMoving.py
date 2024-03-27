@@ -59,6 +59,7 @@ def main():
 
     # スクリーンショットを取得（Imageオブジェクトで返される）
     im = pyautogui.screenshot()
+    print(im.getpixel((50, 200))) # (130, 135, 144)
 
 if __name__ == '__main__':
     main()
