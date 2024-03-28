@@ -59,6 +59,7 @@ def main():
 
     # スクリーンショットを取得（Imageオブジェクトで返される）
     im = pyautogui.screenshot()
+    # Imageオブジェクトに座標タプルを指定してgetpixel()を呼ぶとRGBタプルが返される
     print(im.getpixel((0, 0)))    # (130, 135, 144)
     print(im.getpixel((50, 200))) # (255, 135, 144)
 
