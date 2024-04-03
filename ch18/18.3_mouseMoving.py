@@ -63,5 +63,7 @@ def main():
     print(im.getpixel((0, 0)))    # (130, 135, 144)
     print(im.getpixel((50, 200))) # (255, 135, 144)
 
+    print(pyautogui.pixelMatchesColor(50, 200, (130, 135, 144))) # True
+
 if __name__ == '__main__':
     main()
