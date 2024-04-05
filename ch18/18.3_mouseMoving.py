@@ -31,6 +31,7 @@ def main():
         x, y = pyautogui.position()
         position_str = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
         pixel_color = pyautogui.screenshot().getpixel((x, y))
+        position_str += ' RGB: (' + str(pixel_color[0]).rjust(3)
         print(position, end='')
         print('\b' * len(position_str), end='', flush=True) # バックスペース文字の出力時はflush=Trueにしないと正しく表示されない
 
