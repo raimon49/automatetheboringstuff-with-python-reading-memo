@@ -70,6 +70,7 @@ def main():
     print(pyautogui.pixelMatchesColor(50, 200, (130, 135, 144))) # True
     print(pyautogui.pixelMatchesColor(50, 200, (255, 135, 144))) # False
 
+    # 引数で指定した画像の最初に見付かった領域の左上座標を返す（何も見つからなければNone）
     print(pyautogui.locateOnScreen('submit.png')) # (643, 745, 70, 29)
 
 if __name__ == '__main__':
