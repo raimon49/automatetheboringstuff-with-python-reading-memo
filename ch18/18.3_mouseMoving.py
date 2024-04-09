@@ -70,5 +70,7 @@ def main():
     print(pyautogui.pixelMatchesColor(50, 200, (130, 135, 144))) # True
     print(pyautogui.pixelMatchesColor(50, 200, (255, 135, 144))) # False
 
+    print(pyautogui.locateOnScreen('submit.png')) # (643, 745, 70, 29)
+
 if __name__ == '__main__':
     main()
