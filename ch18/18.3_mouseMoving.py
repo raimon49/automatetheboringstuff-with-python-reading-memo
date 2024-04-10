@@ -72,6 +72,7 @@ def main():
 
     # 引数で指定した画像の最初に見付かった領域の左上座標を返す（何も見つからなければNone）
     print(pyautogui.locateOnScreen('submit.png')) # (643, 745, 70, 29)
+    # 引数で指定した画像の最初に見付かった領域すべての座標を返す
     print(pyautogui.locateAllOnScreen('submit.png')) # [(643, 745, 70, 29), (1007, 801, 70, 29)]
 
 if __name__ == '__main__':
