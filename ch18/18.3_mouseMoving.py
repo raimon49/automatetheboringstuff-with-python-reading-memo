@@ -76,6 +76,7 @@ def main():
     print(pyautogui.locateAllOnScreen('submit.png')) # [(643, 745, 70, 29), (1007, 801, 70, 29)]
     print(pyautogui.center((643, 745, 70, 29))) # (678, 759)
     pyautogui.click((678, 759)) # center()で返された箇所をクリック
+    pyautogui.typewrite('Hello, world!')
 
 if __name__ == '__main__':
     main()
