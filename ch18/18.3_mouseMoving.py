@@ -76,8 +76,8 @@ def main():
     print(pyautogui.locateAllOnScreen('submit.png')) # [(643, 745, 70, 29), (1007, 801, 70, 29)]
     print(pyautogui.center((643, 745, 70, 29))) # (678, 759)
     pyautogui.click((678, 759)) # center()で返された箇所をクリック
-    pyautogui.typewrite('Hello, world!')
-    pyautogui.typewrite('Hello, world!', 0.25)
+    pyautogui.typewrite('Hello, world!')       # テキストを一度に入力
+    pyautogui.typewrite('Hello, world!', 0.25) # テキストを1文字ずつ1/4秒空けて入力
 
 if __name__ == '__main__':
     main()
