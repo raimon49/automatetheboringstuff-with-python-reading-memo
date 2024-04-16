@@ -77,6 +77,7 @@ def main():
     print(pyautogui.center((643, 745, 70, 29))) # (678, 759)
     pyautogui.click((678, 759)) # center()で返された箇所をクリック
     pyautogui.typewrite('Hello, world!')
+    pyautogui.typewrite('Hello, world!', 0.25)
 
 if __name__ == '__main__':
     main()
