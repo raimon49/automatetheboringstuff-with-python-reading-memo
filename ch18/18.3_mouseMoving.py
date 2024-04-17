@@ -79,5 +79,11 @@ def main():
     pyautogui.typewrite('Hello, world!')       # テキストを一度に入力
     pyautogui.typewrite('Hello, world!', 0.25) # テキストを1文字ずつ1/4秒空けて入力
 
+    # 日本語対応していないバージョンではクリップボードを経由
+    def mytypewrite(s):
+        pyperclip.copy(s)
+        pyautogui.hotkey('ctrl', 'v')
+
+
 if __name__ == '__main__':
     main()
