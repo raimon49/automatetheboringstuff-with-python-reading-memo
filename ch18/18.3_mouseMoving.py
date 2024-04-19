@@ -81,8 +81,8 @@ def main():
 
     # 日本語対応していないバージョンではクリップボードを経由
     def mytypewrite(s):
-        pyperclip.copy(s)
-        pyautogui.hotkey('ctrl', 'v')
+        pyperclip.copy(s)             # クリップボードにコピー
+        pyautogui.hotkey('ctrl', 'v') # hotkeyで貼り付け
 
 
 if __name__ == '__main__':
