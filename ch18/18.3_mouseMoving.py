@@ -84,6 +84,7 @@ def main():
         pyperclip.copy(s)             # クリップボードにコピー
         pyautogui.hotkey('ctrl', 'v') # hotkeyで貼り付け
 
+    # ab入力後にカーソルを左に2回移動するため"XYab"と入力される
     pyautogui.typewrite(['a', 'b', 'left', 'left', 'X', 'Y'])
 
 
