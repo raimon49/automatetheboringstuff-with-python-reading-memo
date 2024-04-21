@@ -84,6 +84,8 @@ def main():
         pyperclip.copy(s)             # クリップボードにコピー
         pyautogui.hotkey('ctrl', 'v') # hotkeyで貼り付け
 
+    pyautogui.typewrite(['a', 'b', 'left', 'left', 'X', 'Y'])
+
 
 if __name__ == '__main__':
     main()
