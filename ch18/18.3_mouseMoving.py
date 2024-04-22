@@ -89,6 +89,7 @@ def main():
 
     pyautogui.keyDown('shift')
     pyautogui.press('4')
+    pyautogui.keyUp('shift')
 
 
 if __name__ == '__main__':
