@@ -87,9 +87,9 @@ def main():
     # ab入力後にカーソルを左に2回移動するため"XYab"と入力される
     pyautogui.typewrite(['a', 'b', 'left', 'left', 'X', 'Y'])
 
-    pyautogui.keyDown('shift')
-    pyautogui.press('4')
-    pyautogui.keyUp('shift')
+    pyautogui.keyDown('shift') # Shiftキーを押しながら
+    pyautogui.press('4')       # 数字の4を押す
+    pyautogui.keyUp('shift')   # Shiftキーを離す
 
 
 if __name__ == '__main__':
