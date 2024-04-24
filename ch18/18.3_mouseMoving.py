@@ -91,6 +91,8 @@ def main():
     pyautogui.press('4')       # 数字の4を押す
     pyautogui.keyUp('shift')   # Shiftキーを離す
 
+    pyautogui.hotkey('ctrl', 'c')
+
 
 if __name__ == '__main__':
     main()
