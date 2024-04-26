@@ -95,6 +95,7 @@ def main():
     pyautogui.keyDown('ctrl')
     pyautogui.keyDown('c')
     pyautogui.keyUp('c')
+    pyautogui.keyUp('ctrl')
 
 
 if __name__ == '__main__':
