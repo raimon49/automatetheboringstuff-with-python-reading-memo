@@ -98,6 +98,9 @@ def main():
     pyautogui.keyUp('c')
     pyautogui.keyUp('ctrl')
 
+    def comment_after_delay():
+        pyautogui.click(100, 100)
+
 
 if __name__ == '__main__':
     main()
