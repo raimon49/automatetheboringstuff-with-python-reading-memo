@@ -92,6 +92,7 @@ def main():
     pyautogui.keyUp('shift')   # Shiftキーを離す
 
     pyautogui.hotkey('ctrl', 'c')
+    # 以下のキーシーケンスはhotkey('ctrl', 'c')と同じ
     pyautogui.keyDown('ctrl')
     pyautogui.keyDown('c')
     pyautogui.keyUp('c')
