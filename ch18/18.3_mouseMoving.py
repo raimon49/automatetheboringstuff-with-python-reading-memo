@@ -100,6 +100,7 @@ def main():
 
     def comment_after_delay():
         pyautogui.click(100, 100)
+        pyautogui.typewrite('In IDLE, Alt-3 comments out a line.')
 
 
 if __name__ == '__main__':
