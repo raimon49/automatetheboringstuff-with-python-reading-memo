@@ -104,6 +104,8 @@ def main():
         times.sleep(2)
         pyautogui.hotkey('alt', '3')
 
+    comment_after_delay()
+
 
 if __name__ == '__main__':
     main()
