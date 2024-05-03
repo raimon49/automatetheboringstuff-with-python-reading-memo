@@ -10,6 +10,14 @@ def main():
     submit_button_color = (75, 141, 249)
     submit_anoter_link = (760, 224)
 
+    # TODO: ユーザーがスクリプトを中断する機会を与える
+
+    # TODO: フォームページが読み込まれるのを待つ
+
+    # TODO: Name欄を入力する
+
+    # TODO: Greatest Fear(s)欄を入力する
+
 
 if __name__ == '__main__':
     main()
