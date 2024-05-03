@@ -101,6 +101,7 @@ def main():
     def comment_after_delay():
         pyautogui.click(100, 100)
         pyautogui.typewrite('In IDLE, Alt-3 comments out a line.')
+        # テキスト入力後、2秒待ってから#を入力しコメントアウト
         times.sleep(2)
         pyautogui.hotkey('alt', '3')
 
