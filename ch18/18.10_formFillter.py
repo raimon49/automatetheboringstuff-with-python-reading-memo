@@ -20,6 +20,8 @@ def main():
 
     # TODO: Source of Wizard Poewers欄を選択する
 
+    # TODO: RoboCop欄を選択する
+
 
 if __name__ == '__main__':
     main()
