@@ -18,6 +18,8 @@ def main():
 
     # TODO: Greatest Fear(s)欄を入力する
 
+    # TODO: Source of Wizard Poewers欄を選択する
+
 
 if __name__ == '__main__':
     main()
