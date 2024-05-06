@@ -22,6 +22,8 @@ def main():
 
     # TODO: RoboCop欄を選択する
 
+    # TODO: Additional Comments欄を入力する
+
 
 if __name__ == '__main__':
     main()
