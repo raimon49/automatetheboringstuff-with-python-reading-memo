@@ -24,6 +24,8 @@ def main():
 
     # TODO: Additional Comments欄を入力する
 
+    # TODO: Submitをクリックする
+
 
 if __name__ == '__main__':
     main()
