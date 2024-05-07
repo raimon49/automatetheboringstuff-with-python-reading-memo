@@ -26,6 +26,8 @@ def main():
 
     # TODO: Submitをクリックする
 
+    # TODO: 次のページが読み込まれるのを待つ
+
 
 if __name__ == '__main__':
     main()
