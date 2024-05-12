@@ -12,6 +12,8 @@ def main():
 
     form_data = [{'name': 'Alice', 'fear': 'eavedroppers', 'source': 'wand',
                   'robocop': 4, 'comments': 'Tell Bob I said hi>'},
+                 {'name': 'Bob', 'fear': 'beers', 'source': 'amulet',
+                  'robocop': 4, 'comments': 'N/A'},
                  ]
 
     # TODO: ユーザーがスクリプトを中断する機会を与える
