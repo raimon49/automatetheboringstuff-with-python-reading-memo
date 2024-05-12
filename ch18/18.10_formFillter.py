@@ -28,6 +28,8 @@ def main():
 
     # TODO: 次のページが読み込まれるのを待つ
 
+    # TODO: Submit another responseリンクをクリックする
+
 
 if __name__ == '__main__':
     main()
