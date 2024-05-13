@@ -14,6 +14,8 @@ def main():
                   'robocop': 4, 'comments': 'Tell Bob I said hi>'},
                  {'name': 'Bob', 'fear': 'beers', 'source': 'amulet',
                   'robocop': 4, 'comments': 'N/A'},
+                 {'name': 'Alex Murphy', 'fear': 'ED-209', 'source': 'money',
+                  'robocop': 5, 'comments': 'Protect the innocent. Serve the public trust. Uphold the law.'},
                  ]
 
     # TODO: ユーザーがスクリプトを中断する機会を与える
