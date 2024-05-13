@@ -18,6 +18,8 @@ def main():
                   'robocop': 5, 'comments': 'Protect the innocent. Serve the public trust. Uphold the law.'},
                  ]
 
+    pyautogui.PAUSE = 0.5
+
     # TODO: ユーザーがスクリプトを中断する機会を与える
 
     # TODO: フォームページが読み込まれるのを待つ
