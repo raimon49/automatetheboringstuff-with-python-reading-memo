@@ -20,8 +20,8 @@ def main():
 
     pyautogui.PAUSE = 0.5
 
-    # TODO: ユーザーがスクリプトを中断する機会を与える
     for person in form_data:
+        # ユーザーがスクリプトを中断する機会を与える
         print('>>> 5秒間、一時停止中。中断するにはCtrl-Cを推してください。<<<')
         time.sleep(5)
 
