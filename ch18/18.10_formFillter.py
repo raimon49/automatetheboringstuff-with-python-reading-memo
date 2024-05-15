@@ -25,6 +25,9 @@ def main():
         print('>>> 5秒間、一時停止中。中断するにはCtrl-Cを推してください。<<<')
         time.sleep(5)
 
+        while not pyautogui.pixelMatchesColor(submit_button[0], submit_button[1], submit_button_color):
+            time.sleep(5)
+
     # TODO: フォームページが読み込まれるのを待つ
 
     # TODO: Name欄を入力する
