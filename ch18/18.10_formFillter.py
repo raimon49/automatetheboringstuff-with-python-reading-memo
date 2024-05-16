@@ -29,6 +29,8 @@ def main():
         while not pyautogui.pixelMatchesColor(submit_button[0], submit_button[1], submit_button_color):
             time.sleep(5)
 
+        print('{}の情報を入力中...'.format(person['name']))
+
 
     # TODO: Name欄を入力する
 
