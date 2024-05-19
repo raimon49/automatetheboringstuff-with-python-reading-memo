@@ -30,6 +30,7 @@ def main():
             time.sleep(5)
 
         print('{}の情報を入力中...'.format(person['name']))
+        pyautogui.click(name_field[0], name_field[1])
 
 
     # TODO: Name欄を入力する
