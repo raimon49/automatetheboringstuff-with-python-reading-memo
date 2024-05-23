@@ -32,6 +32,8 @@ def main():
         print('{}の情報を入力中...'.format(person['name']))
         pyautogui.click(name_field[0], name_field[1])
 
+        pyautogui.typewrite(person['name'] + '\t')
+
 
     # TODO: Name欄を入力する
 
