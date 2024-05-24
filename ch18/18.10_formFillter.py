@@ -35,10 +35,9 @@ def main():
         # Name欄を入力する
         pyautogui.typewrite(person['name'] + '\t')
 
+        # Greatest Fear(s)欄を入力する
         pyautogui.typewrite(person['fear'] + '\t')
 
-
-    # TODO: Greatest Fear(s)欄を入力する
 
     # TODO: Source of Wizard Poewers欄を選択する
 
