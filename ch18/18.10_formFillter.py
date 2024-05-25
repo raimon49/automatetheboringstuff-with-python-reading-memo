@@ -38,6 +38,9 @@ def main():
         # Greatest Fear(s)欄を入力する
         pyautogui.typewrite(person['fear'] + '\t')
 
+        if person['source'] == 'wand':
+            pyautogui.typewrite(['down', '\t'])
+
 
     # TODO: Source of Wizard Poewers欄を選択する
 
