@@ -44,6 +44,8 @@ def main():
             pyautogui.typewrite(['down', 'down', '\t'])
         elif person['source'] == 'crystal ball':
             pyautogui.typewrite(['down', 'down', 'down', '\t'])
+        elif person['source'] == 'money':
+            pyautogui.typewrite(['down', 'down', 'down', 'down', '\t'])
 
 
     # TODO: Source of Wizard Poewers欄を選択する
