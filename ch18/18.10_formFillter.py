@@ -38,6 +38,7 @@ def main():
         # Greatest Fear(s)欄を入力する
         pyautogui.typewrite(person['fear'] + '\t')
 
+        # Source of Wizard Poewers欄を選択する
         if person['source'] == 'wand':
             pyautogui.typewrite(['down', '\t'])
         elif person['source'] == 'amulet':
@@ -47,8 +48,6 @@ def main():
         elif person['source'] == 'money':
             pyautogui.typewrite(['down', 'down', 'down', 'down', '\t'])
 
-
-    # TODO: Source of Wizard Poewers欄を選択する
 
     # TODO: RoboCop欄を選択する
 
