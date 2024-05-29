@@ -49,6 +49,9 @@ def main():
             pyautogui.typewrite(['down', 'down', 'down', 'down', '\t'])
 
 
+        if person['robocop'] == 1:
+            pyautogui.typewrite([' ', '\t'])
+
     # TODO: RoboCop欄を選択する
 
     # TODO: Additional Comments欄を入力する
