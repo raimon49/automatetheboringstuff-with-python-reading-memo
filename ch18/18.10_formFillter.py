@@ -51,6 +51,8 @@ def main():
 
         if person['robocop'] == 1:
             pyautogui.typewrite([' ', '\t'])
+        elif person['robocop'] == 2:
+            pyautogui.typewrite(['right', '\t'])
 
     # TODO: RoboCop欄を選択する
 
