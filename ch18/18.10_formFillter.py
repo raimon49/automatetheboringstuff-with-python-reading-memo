@@ -48,7 +48,7 @@ def main():
         elif person['source'] == 'money':
             pyautogui.typewrite(['down', 'down', 'down', 'down', '\t'])
 
-
+        # RoboCop欄を選択する
         if person['robocop'] == 1:
             pyautogui.typewrite([' ', '\t'])
         elif person['robocop'] == 2:
@@ -59,8 +59,6 @@ def main():
             pyautogui.typewrite(['right', 'right', 'right', '\t'])
         elif person['robocop'] == 5:
             pyautogui.typewrite(['right', 'right', 'right', 'right', '\t'])
-
-    # TODO: RoboCop欄を選択する
 
     # TODO: Additional Comments欄を入力する
 
