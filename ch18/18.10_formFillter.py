@@ -60,9 +60,8 @@ def main():
         elif person['robocop'] == 5:
             pyautogui.typewrite(['right', 'right', 'right', 'right', '\t'])
 
+        # Additional Comments欄を入力する
         pyautogui.typewrite(person['comments'] + '\t')
-
-    # TODO: Additional Comments欄を入力する
 
     # TODO: Submitをクリックする
 
