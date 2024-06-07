@@ -63,6 +63,8 @@ def main():
         # Additional Comments欄を入力する
         pyautogui.typewrite(person['comments'] + '\t')
 
+        pyautogui.press('enter')
+
     # TODO: Submitをクリックする
 
     # TODO: 次のページが読み込まれるのを待つ
