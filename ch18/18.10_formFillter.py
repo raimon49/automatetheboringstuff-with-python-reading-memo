@@ -66,10 +66,10 @@ def main():
         # Submitをクリックする
         pyautogui.press('enter')
 
+        # 次のページが読み込まれるのを待つ
         print('送信ボタンを押しました')
         time.sleep(5)
 
-    # TODO: 次のページが読み込まれるのを待つ
 
     # TODO: Submit another responseリンクをクリックする
 
