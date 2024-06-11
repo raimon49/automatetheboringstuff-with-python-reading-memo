@@ -70,10 +70,8 @@ def main():
         print('送信ボタンを押しました')
         time.sleep(5)
 
+        # Submit another responseリンクをクリックする
         pyautogui.click(submit_anoter_link[0], submit_anoter_link[1])
-
-
-    # TODO: Submit another responseリンクをクリックする
 
 
 if __name__ == '__main__':
