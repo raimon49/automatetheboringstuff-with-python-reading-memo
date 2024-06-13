@@ -13,5 +13,6 @@ def main():
     my_age = input() # 年齢を文字列で受け取る
     print('You will be ' + str(int(my_age) + 1) + ' in a year.') # 来年の年齢を表示
 
+
 if __name__ == '__main__':
     main()
