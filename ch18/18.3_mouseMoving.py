@@ -38,7 +38,7 @@ def main():
         print('\b' * len(position_str), end='', flush=True) # バックスペース文字の出力時はflush=Trueにしないと正しく表示されない
 
     # 画面座標の左上をクリックさせる
-    pyautogui.click(10, 5)
+    pyautogui.click(10, 5)       # 左ボタンをクリック
     pyautogui.rightClick(10, 5)  # 右ボタンをクリック
     pyautogui.middleClick(10, 5) # 中央ボタンをクリック
 
