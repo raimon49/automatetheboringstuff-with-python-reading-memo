@@ -43,5 +43,6 @@ def main():
 
     im.save('text.png')
 
+
 if __name__ == '__main__':
     main()
