@@ -37,5 +37,6 @@ def main():
         # 変更を保存する
         im.save(os.path.join('withLogo', filename))
 
+
 if __name__ == '__main__':
     main()
