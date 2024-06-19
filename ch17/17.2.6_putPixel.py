@@ -24,5 +24,6 @@ def main():
 
     im.save('putPixel.png')
 
+
 if __name__ == '__main__':
     main()
