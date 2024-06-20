@@ -17,5 +17,6 @@ def main():
     cat_im.transpose(Image.FLIP_LEFT_RIGHT).save('horizontal_flip.png') # 水平方向に反転
     cat_im.transpose(Image.FLIP_TOP_BOTTOM).save('vertical_flip.png')   # 垂直方向に反転
 
+
 if __name__ == '__main__':
     main()
