@@ -51,5 +51,6 @@ def main():
 
     cat_copy_two.save('tiled.png')
 
+
 if __name__ == '__main__':
     main()
